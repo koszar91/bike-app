@@ -1,7 +1,7 @@
-# Miniprojekt-Bazy-Danych
+## Miniprojekt-Bazy-Danych
 Mini project for Databases lessons at AGH University
 
-Topic:
+#Topic:
 Console application allowing users to share their bicycle trainings and compare their results.
 
 Authors:
@@ -10,11 +10,6 @@ Paweł Hołowicki, Jakub Koźlak, Tomasz Koszarek
 
 Miniprojekt z Baz Danych
 Jakub Koźlak, Paweł Hołowicki, Tomasz Koszarek
-
-
-
-Link do repo na GitHubie:
--click-
 
 
 
