@@ -8,9 +8,6 @@ Console application allowing users to share their bicycle trainings and compare 
 Paweł Hołowicki, Jakub Koźlak, Tomasz Koszarek
 
 
-## Miniprojekt z Baz Danych
-Jakub Koźlak, Paweł Hołowicki, Tomasz Koszarek
-
 
 
 ## Cel projektu
@@ -28,13 +25,10 @@ tworzenie i oglądanie rankingów
 porównywanie osiągów (np. średnich czasów na trasach)
 
 ## Wstępny model danych
-  “Użytkownik”, który posiada swoje minimalne dane osobowe oraz wskazania do swoich znajomych (relacja n:n)
-
-  “Rower” (relacja  użytkownikiem), parametry pojazdu
-
-  “Trening” lub “przejazd” rozumiany jest jako zestaw danych postaci: data, godzina rozpoczęcia, godzina zakończenia, trasa, zdjęcie, kategoria (kolarstwo górskie lub szosowe        (hierarchia typów)
-
-  “Trasa” rozróżniana przy pomocy opisu, posiada informacje o lokalizacji, długości, różnicy wysokości (relacja z treningiem)
+* “Użytkownik”, który posiada swoje minimalne dane osobowe oraz wskazania do swoich znajomych (relacja n:n)
+* “Rower” (relacja  użytkownikiem), parametry pojazdu
+* “Trening” lub “przejazd” rozumiany jest jako zestaw danych postaci: data, godzina rozpoczęcia, godzina zakończenia, trasa, zdjęcie, kategoria (kolarstwo górskie lub szosowe        (hierarchia typów)
+* “Trasa” rozróżniana przy pomocy opisu, posiada informacje o lokalizacji, długości, różnicy wysokości (relacja z treningiem)
 
 ## Wygląd aplikacji 
 Użytkownikowi udostępniany jest ekran logowania/rejestracji, następnie ekran domowy pokazujący ostatnie przejazdy, średnie prędkości, kalendarz z zaznaczonymi datami przejazdów.
