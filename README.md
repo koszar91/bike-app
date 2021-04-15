@@ -18,13 +18,13 @@ Link do repo na GitHubie:
 
 
 
-Cel projektu
+1. Cel projektu
 Stworzenie prostej aplikacji konsolowej służącej do przechywania, udostępniania i porównywania swoich treningów kolarskich
 
-Technologia
+2. Technologia
 Aplikacja napisana zostanie w języku Java i będzie wykorzystywała framework Hibernate.
 
-Szczegóły projektu - główne feature’y aplikacji
+3. Szczegóły projektu - główne feature’y aplikacji
 autentykacja użytkowników
 udostępnienie swojego treningu kolarskiego
 dodawanie znajomych
@@ -32,7 +32,7 @@ oglądanie treningów innych użytkowników
 tworzenie i oglądanie rankingów
 porównywanie osiągów (np. średnich czasów na trasach)
 
-Wstępny model danych
+4. Wstępny model danych
 “Użytkownik”, który posiada swoje minimalne dane osobowe oraz wskazania do swoich znajomych (relacja n:n)
 
 “Rower” (relacja  użytkownikiem), parametry pojazdu
@@ -41,11 +41,6 @@ Wstępny model danych
 
 “Trasa” rozróżniana przy pomocy opisu, posiada informacje o lokalizacji, długości, różnicy wysokości (relacja z treningiem)
 
-
-
-
-
-
-Wygląd aplikacji 
+5. Wygląd aplikacji 
 Użytkownikowi udostępniany jest ekran logowania/rejestracji, następnie ekran domowy pokazujący ostatnie przejazdy, średnie prędkości, kalendarz z zaznaczonymi datami przejazdów.
 Do porównywania treningów z innymi służył będzie widok zawierający rankingi/statystyki, zarówno ogólne jak i np. miesięczne, segregowane kategorią lub płcią
