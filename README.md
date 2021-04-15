@@ -33,13 +33,13 @@ tworzenie i oglądanie rankingów
 porównywanie osiągów (np. średnich czasów na trasach)
 
 4. Wstępny model danych
-“Użytkownik”, który posiada swoje minimalne dane osobowe oraz wskazania do swoich znajomych (relacja n:n)
+  “Użytkownik”, który posiada swoje minimalne dane osobowe oraz wskazania do swoich znajomych (relacja n:n)
 
-“Rower” (relacja  użytkownikiem), parametry pojazdu
+  “Rower” (relacja  użytkownikiem), parametry pojazdu
 
-“Trening” lub “przejazd” rozumiany jest jako zestaw danych postaci: data, godzina rozpoczęcia, godzina zakończenia, trasa, zdjęcie, kategoria (kolarstwo górskie lub szosowe (hierarchia typów)
+  “Trening” lub “przejazd” rozumiany jest jako zestaw danych postaci: data, godzina rozpoczęcia, godzina zakończenia, trasa, zdjęcie, kategoria (kolarstwo górskie lub szosowe        (hierarchia typów)
 
-“Trasa” rozróżniana przy pomocy opisu, posiada informacje o lokalizacji, długości, różnicy wysokości (relacja z treningiem)
+  “Trasa” rozróżniana przy pomocy opisu, posiada informacje o lokalizacji, długości, różnicy wysokości (relacja z treningiem)
 
 5. Wygląd aplikacji 
 Użytkownikowi udostępniany jest ekran logowania/rejestracji, następnie ekran domowy pokazujący ostatnie przejazdy, średnie prędkości, kalendarz z zaznaczonymi datami przejazdów.
