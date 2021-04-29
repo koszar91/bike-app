@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Oracle - AGH_DB">
+  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.20">
+    <root id="1">
+      <ServerVersion>19.0.0.0.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="APPQOSSYS">
+      <ObjectId>59</ObjectId>
+    </schema>
+    <schema id="3" parent="1" name="AUDSYS">
+      <ObjectId>8</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="BD_AJABLONS">
+      <ObjectId>477</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="BD_ANIEMIEC">
+      <ObjectId>437</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="BD_ASIMOWIC">
+      <ObjectId>480</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="BD_BUL">
+      <ObjectId>432</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="BD_CICHOCKI">
+      <ObjectId>423</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="BD_CYGANEK">
+      <ObjectId>482</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="BD_CYPER">
+      <ObjectId>483</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="BD_CZARNIK">
+      <ObjectId>445</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="BD_DELEKTA">
+      <ObjectId>446</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="BD_FACISZEW">
+      <ObjectId>448</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="BD_GKEPKA">
+      <ObjectId>459</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="BD_GONET">
+      <ObjectId>454</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="BD_GRAPA">
+      <ObjectId>474</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="BD_HOLOWICK">
+      <ObjectId>478</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="BD_HWOLAK">
+      <ObjectId>420</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="BD_JBUGAJSK">
+      <ObjectId>422</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="BD_JKLIMEK">
+      <ObjectId>487</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="BD_JKOZLAK">
+      <ObjectId>485</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="BD_JUZA">
+      <ObjectId>431</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="BD_JZBOROWS">
+      <ObjectId>426</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="BD_KARPINSK">
+      <ObjectId>469</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="BD_KAZAJAC">
+      <ObjectId>439</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="BD_KBARCZYK">
+      <ObjectId>451</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="BD_KGADEK">
+      <ObjectId>486</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="BD_KJANKOWS">
+      <ObjectId>438</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="BD_KJEDRYCH">
+      <ObjectId>458</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="BD_KOSZAREK">
+      <ObjectId>489</ObjectId>
+      <CreatedTimestamp>2021-03-11.17:47:26</CreatedTimestamp>
+      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <IntrospectionVersion>200820</IntrospectionVersion>
+      <IntrospectionTimestamp>2021-04-29.15:57:49</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="31" parent="1" name="BD_KOWALCZY">
+      <ObjectId>470</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="BD_KPOLAK">
+      <ObjectId>484</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="BD_KUBOK">
+      <ObjectId>461</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="BD_KULAWSKA">
+      <ObjectId>452</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="BD_KUROWSKI">
+      <ObjectId>460</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="BD_KWILK">
+      <ObjectId>447</ObjectId>
+    </schema>
+    <schema id="37" parent="1" name="BD_KWOJTOWI">
+      <ObjectId>433</ObjectId>
+    </schema>
+    <schema id="38" parent="1" name="BD_LIBERA">
+      <ObjectId>463</ObjectId>
+    </schema>
+    <schema id="39" parent="1" name="BD_LSTACHON">
+      <ObjectId>442</ObjectId>
+    </schema>
+    <schema id="40" parent="1" name="BD_MACZIELI">
+      <ObjectId>455</ObjectId>
+    </schema>
+    <schema id="41" parent="1" name="BD_MAKAREWI">
+      <ObjectId>456</ObjectId>
+    </schema>
+    <schema id="42" parent="1" name="BD_MAKOCOT">
+      <ObjectId>465</ObjectId>
+    </schema>
+    <schema id="43" parent="1" name="BD_MATKOWAL">
+      <ObjectId>421</ObjectId>
+    </schema>
+    <schema id="44" parent="1" name="BD_MIKIALEV">
+      <ObjectId>468</ObjectId>
+    </schema>
+    <schema id="45" parent="1" name="BD_MSKWARA">
+      <ObjectId>443</ObjectId>
+    </schema>
+    <schema id="46" parent="1" name="BD_NOWOBILS">
+      <ObjectId>419</ObjectId>
+    </schema>
+    <schema id="47" parent="1" name="BD_ORAWCZAK">
+      <ObjectId>429</ObjectId>
+    </schema>
+    <schema id="48" parent="1" name="BD_PAADAMCZ">
+      <ObjectId>450</ObjectId>
+    </schema>
+    <schema id="49" parent="1" name="BD_PALCZAK">
+      <ObjectId>475</ObjectId>
+    </schema>
+    <schema id="50" parent="1" name="BD_PDYMARA">
+      <ObjectId>434</ObjectId>
+    </schema>
+    <schema id="51" parent="1" name="BD_PIEROG">
+      <ObjectId>457</ObjectId>
+    </schema>
+    <schema id="52" parent="1" name="BD_PKASPRZY">
+      <ObjectId>430</ObjectId>
+    </schema>
+    <schema id="53" parent="1" name="BD_PLOSZCZY">
+      <ObjectId>453</ObjectId>
+    </schema>
+    <schema id="54" parent="1" name="BD_PLUCINSK">
+      <ObjectId>471</ObjectId>
+    </schema>
+    <schema id="55" parent="1" name="BD_RM">
+      <ObjectId>418</ObjectId>
+    </schema>
+    <schema id="56" parent="1" name="BD_RODZIEWI">
+      <ObjectId>441</ObjectId>
+    </schema>
+    <schema id="57" parent="1" name="BD_RYNKOWSK">
+      <ObjectId>462</ObjectId>
+    </schema>
+    <schema id="58" parent="1" name="BD_RYT">
+      <ObjectId>427</ObjectId>
+    </schema>
+    <schema id="59" parent="1" name="BD_SAKOL">
+      <ObjectId>428</ObjectId>
+    </schema>
+    <schema id="60" parent="1" name="BD_SIEDLANO">
+      <ObjectId>467</ObjectId>
+    </schema>
+    <schema id="61" parent="1" name="BD_SIEKIERZ">
+      <ObjectId>481</ObjectId>
+    </schema>
+    <schema id="62" parent="1" name="BD_SKOREK">
+      <ObjectId>444</ObjectId>
+    </schema>
+    <schema id="63" parent="1" name="BD_SLONINA">
+      <ObjectId>488</ObjectId>
+    </schema>
+    <schema id="64" parent="1" name="BD_SSTEPIEN">
+      <ObjectId>425</ObjectId>
+    </schema>
+    <schema id="65" parent="1" name="BD_SSZCZEPA">
+      <ObjectId>440</ObjectId>
+    </schema>
+    <schema id="66" parent="1" name="BD_STAROWIE">
+      <ObjectId>479</ObjectId>
+    </schema>
+    <schema id="67" parent="1" name="BD_SZYNALIK">
+      <ObjectId>424</ObjectId>
+    </schema>
+    <schema id="68" parent="1" name="BD_UKOWSKI">
+      <ObjectId>466</ObjectId>
+    </schema>
+    <schema id="69" parent="1" name="BD_WALAT">
+      <ObjectId>476</ObjectId>
+    </schema>
+    <schema id="70" parent="1" name="BD_WLODARSK">
+      <ObjectId>435</ObjectId>
+    </schema>
+    <schema id="71" parent="1" name="BD_WOJTAROW">
+      <ObjectId>473</ObjectId>
+    </schema>
+    <schema id="72" parent="1" name="BD_WPIECHAC">
+      <ObjectId>472</ObjectId>
+    </schema>
+    <schema id="73" parent="1" name="BD_WSIKORA">
+      <ObjectId>436</ObjectId>
+    </schema>
+    <schema id="74" parent="1" name="BD_ZAMOJTEL">
+      <ObjectId>464</ObjectId>
+    </schema>
+    <schema id="75" parent="1" name="BD_ZUBKO">
+      <ObjectId>449</ObjectId>
+    </schema>
+    <schema id="76" parent="1" name="CTXSYS">
+      <ObjectId>87</ObjectId>
+    </schema>
+    <schema id="77" parent="1" name="DBSFWUSER">
+      <ObjectId>37</ObjectId>
+    </schema>
+    <schema id="78" parent="1" name="DBSNMP">
+      <ObjectId>58</ObjectId>
+    </schema>
+    <schema id="79" parent="1" name="DIP">
+      <ObjectId>25</ObjectId>
+    </schema>
+    <schema id="80" parent="1" name="DVF">
+      <ObjectId>103</ObjectId>
+    </schema>
+    <schema id="81" parent="1" name="DVSYS">
+      <ObjectId>1279990</ObjectId>
+    </schema>
+    <schema id="82" parent="1" name="GGSYS">
+      <ObjectId>64</ObjectId>
+    </schema>
+    <schema id="83" parent="1" name="GSMADMIN_INTERNAL">
+      <ObjectId>22</ObjectId>
+    </schema>
+    <schema id="84" parent="1" name="GSMCATUSER">
+      <ObjectId>63</ObjectId>
+    </schema>
+    <schema id="85" parent="1" name="GSMROOTUSER">
+      <ObjectId>24</ObjectId>
+    </schema>
+    <schema id="86" parent="1" name="GSMUSER">
+      <ObjectId>23</ObjectId>
+    </schema>
+    <schema id="87" parent="1" name="LBACSYS">
+      <ObjectId>101</ObjectId>
+    </schema>
+    <schema id="88" parent="1" name="MARCJANDBA">
+      <ObjectId>107</ObjectId>
+    </schema>
+    <schema id="89" parent="1" name="MDDATA">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="90" parent="1" name="MDSYS">
+      <ObjectId>93</ObjectId>
+    </schema>
+    <schema id="91" parent="1" name="NORTHWIND">
+      <ObjectId>109</ObjectId>
+    </schema>
+    <schema id="92" parent="1" name="OJVMSYS">
+      <ObjectId>85</ObjectId>
+    </schema>
+    <schema id="93" parent="1" name="OLAPSYS">
+      <ObjectId>96</ObjectId>
+    </schema>
+    <schema id="94" parent="1" name="ORACLE_OCM">
+      <ObjectId>41</ObjectId>
+    </schema>
+    <schema id="95" parent="1" name="ORDDATA">
+      <ObjectId>90</ObjectId>
+    </schema>
+    <schema id="96" parent="1" name="ORDPLUGINS">
+      <ObjectId>91</ObjectId>
+    </schema>
+    <schema id="97" parent="1" name="ORDSYS">
+      <ObjectId>89</ObjectId>
+    </schema>
+    <schema id="98" parent="1" name="OUTLN">
+      <ObjectId>13</ObjectId>
+    </schema>
+    <schema id="99" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+      <CreatedTimestamp>2019-04-17.02:56:16</CreatedTimestamp>
+      <ModifiedTimestamp>2019-09-14.18:24:00</ModifiedTimestamp>
+      <IntrospectionVersion>200820</IntrospectionVersion>
+      <IntrospectionTimestamp>2021-04-29.15:15:20</IntrospectionTimestamp>
+    </schema>
+    <schema id="100" parent="1" name="REMOTE_SCHEDULER_AGENT">
+      <ObjectId>36</ObjectId>
+    </schema>
+    <schema id="101" parent="1" name="SIWIKDBA">
+      <ObjectId>281</ObjectId>
+    </schema>
+    <schema id="102" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>92</ObjectId>
+    </schema>
+    <schema id="103" parent="1" name="STUDENT">
+      <ObjectId>111</ObjectId>
+    </schema>
+    <schema id="104" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="105" parent="1" name="SYS$UMF">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="106" parent="1" name="SYSBACKUP">
+      <ObjectId>2147483617</ObjectId>
+    </schema>
+    <schema id="107" parent="1" name="SYSDG">
+      <ObjectId>2147483618</ObjectId>
+    </schema>
+    <schema id="108" parent="1" name="SYSKM">
+      <ObjectId>2147483619</ObjectId>
+    </schema>
+    <schema id="109" parent="1" name="SYSRAC">
+      <ObjectId>2147483620</ObjectId>
+    </schema>
+    <schema id="110" parent="1" name="SYSTEM">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="111" parent="1" name="WMSYS">
+      <ObjectId>76</ObjectId>
+    </schema>
+    <schema id="112" parent="1" name="XDB">
+      <ObjectId>66</ObjectId>
+    </schema>
+    <schema id="113" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <user id="114" parent="1" name="APPQOSSYS">
+      <ObjectId>59</ObjectId>
+    </user>
+    <user id="115" parent="1" name="AUDSYS">
+      <ObjectId>8</ObjectId>
+    </user>
+    <user id="116" parent="1" name="BD_AJABLONS">
+      <ObjectId>477</ObjectId>
+    </user>
+    <user id="117" parent="1" name="BD_ANIEMIEC">
+      <ObjectId>437</ObjectId>
+    </user>
+    <user id="118" parent="1" name="BD_ASIMOWIC">
+      <ObjectId>480</ObjectId>
+    </user>
+    <user id="119" parent="1" name="BD_BUL">
+      <ObjectId>432</ObjectId>
+    </user>
+    <user id="120" parent="1" name="BD_CICHOCKI">
+      <ObjectId>423</ObjectId>
+    </user>
+    <user id="121" parent="1" name="BD_CYGANEK">
+      <ObjectId>482</ObjectId>
+    </user>
+    <user id="122" parent="1" name="BD_CYPER">
+      <ObjectId>483</ObjectId>
+    </user>
+    <user id="123" parent="1" name="BD_CZARNIK">
+      <ObjectId>445</ObjectId>
+    </user>
+    <user id="124" parent="1" name="BD_DELEKTA">
+      <ObjectId>446</ObjectId>
+    </user>
+    <user id="125" parent="1" name="BD_FACISZEW">
+      <ObjectId>448</ObjectId>
+    </user>
+    <user id="126" parent="1" name="BD_GKEPKA">
+      <ObjectId>459</ObjectId>
+    </user>
+    <user id="127" parent="1" name="BD_GONET">
+      <ObjectId>454</ObjectId>
+    </user>
+    <user id="128" parent="1" name="BD_GRAPA">
+      <ObjectId>474</ObjectId>
+    </user>
+    <user id="129" parent="1" name="BD_HOLOWICK">
+      <ObjectId>478</ObjectId>
+    </user>
+    <user id="130" parent="1" name="BD_HWOLAK">
+      <ObjectId>420</ObjectId>
+    </user>
+    <user id="131" parent="1" name="BD_JBUGAJSK">
+      <ObjectId>422</ObjectId>
+    </user>
+    <user id="132" parent="1" name="BD_JKLIMEK">
+      <ObjectId>487</ObjectId>
+    </user>
+    <user id="133" parent="1" name="BD_JKOZLAK">
+      <ObjectId>485</ObjectId>
+    </user>
+    <user id="134" parent="1" name="BD_JUZA">
+      <ObjectId>431</ObjectId>
+    </user>
+    <user id="135" parent="1" name="BD_JZBOROWS">
+      <ObjectId>426</ObjectId>
+    </user>
+    <user id="136" parent="1" name="BD_KARPINSK">
+      <ObjectId>469</ObjectId>
+    </user>
+    <user id="137" parent="1" name="BD_KAZAJAC">
+      <ObjectId>439</ObjectId>
+    </user>
+    <user id="138" parent="1" name="BD_KBARCZYK">
+      <ObjectId>451</ObjectId>
+    </user>
+    <user id="139" parent="1" name="BD_KGADEK">
+      <ObjectId>486</ObjectId>
+    </user>
+    <user id="140" parent="1" name="BD_KJANKOWS">
+      <ObjectId>438</ObjectId>
+    </user>
+    <user id="141" parent="1" name="BD_KJEDRYCH">
+      <ObjectId>458</ObjectId>
+    </user>
+    <user id="142" parent="1" name="BD_KOSZAREK">
+      <ObjectId>489</ObjectId>
+    </user>
+    <user id="143" parent="1" name="BD_KOWALCZY">
+      <ObjectId>470</ObjectId>
+    </user>
+    <user id="144" parent="1" name="BD_KPOLAK">
+      <ObjectId>484</ObjectId>
+    </user>
+    <user id="145" parent="1" name="BD_KUBOK">
+      <ObjectId>461</ObjectId>
+    </user>
+    <user id="146" parent="1" name="BD_KULAWSKA">
+      <ObjectId>452</ObjectId>
+    </user>
+    <user id="147" parent="1" name="BD_KUROWSKI">
+      <ObjectId>460</ObjectId>
+    </user>
+    <user id="148" parent="1" name="BD_KWILK">
+      <ObjectId>447</ObjectId>
+    </user>
+    <user id="149" parent="1" name="BD_KWOJTOWI">
+      <ObjectId>433</ObjectId>
+    </user>
+    <user id="150" parent="1" name="BD_LIBERA">
+      <ObjectId>463</ObjectId>
+    </user>
+    <user id="151" parent="1" name="BD_LSTACHON">
+      <ObjectId>442</ObjectId>
+    </user>
+    <user id="152" parent="1" name="BD_MACZIELI">
+      <ObjectId>455</ObjectId>
+    </user>
+    <user id="153" parent="1" name="BD_MAKAREWI">
+      <ObjectId>456</ObjectId>
+    </user>
+    <user id="154" parent="1" name="BD_MAKOCOT">
+      <ObjectId>465</ObjectId>
+    </user>
+    <user id="155" parent="1" name="BD_MATKOWAL">
+      <ObjectId>421</ObjectId>
+    </user>
+    <user id="156" parent="1" name="BD_MIKIALEV">
+      <ObjectId>468</ObjectId>
+    </user>
+    <user id="157" parent="1" name="BD_MSKWARA">
+      <ObjectId>443</ObjectId>
+    </user>
+    <user id="158" parent="1" name="BD_NOWOBILS">
+      <ObjectId>419</ObjectId>
+    </user>
+    <user id="159" parent="1" name="BD_ORAWCZAK">
+      <ObjectId>429</ObjectId>
+    </user>
+    <user id="160" parent="1" name="BD_PAADAMCZ">
+      <ObjectId>450</ObjectId>
+    </user>
+    <user id="161" parent="1" name="BD_PALCZAK">
+      <ObjectId>475</ObjectId>
+    </user>
+    <user id="162" parent="1" name="BD_PDYMARA">
+      <ObjectId>434</ObjectId>
+    </user>
+    <user id="163" parent="1" name="BD_PIEROG">
+      <ObjectId>457</ObjectId>
+    </user>
+    <user id="164" parent="1" name="BD_PKASPRZY">
+      <ObjectId>430</ObjectId>
+    </user>
+    <user id="165" parent="1" name="BD_PLOSZCZY">
+      <ObjectId>453</ObjectId>
+    </user>
+    <user id="166" parent="1" name="BD_PLUCINSK">
+      <ObjectId>471</ObjectId>
+    </user>
+    <user id="167" parent="1" name="BD_RM">
+      <ObjectId>418</ObjectId>
+    </user>
+    <user id="168" parent="1" name="BD_RODZIEWI">
+      <ObjectId>441</ObjectId>
+    </user>
+    <user id="169" parent="1" name="BD_RYNKOWSK">
+      <ObjectId>462</ObjectId>
+    </user>
+    <user id="170" parent="1" name="BD_RYT">
+      <ObjectId>427</ObjectId>
+    </user>
+    <user id="171" parent="1" name="BD_SAKOL">
+      <ObjectId>428</ObjectId>
+    </user>
+    <user id="172" parent="1" name="BD_SIEDLANO">
+      <ObjectId>467</ObjectId>
+    </user>
+    <user id="173" parent="1" name="BD_SIEKIERZ">
+      <ObjectId>481</ObjectId>
+    </user>
+    <user id="174" parent="1" name="BD_SKOREK">
+      <ObjectId>444</ObjectId>
+    </user>
+    <user id="175" parent="1" name="BD_SLONINA">
+      <ObjectId>488</ObjectId>
+    </user>
+    <user id="176" parent="1" name="BD_SSTEPIEN">
+      <ObjectId>425</ObjectId>
+    </user>
+    <user id="177" parent="1" name="BD_SSZCZEPA">
+      <ObjectId>440</ObjectId>
+    </user>
+    <user id="178" parent="1" name="BD_STAROWIE">
+      <ObjectId>479</ObjectId>
+    </user>
+    <user id="179" parent="1" name="BD_SZYNALIK">
+      <ObjectId>424</ObjectId>
+    </user>
+    <user id="180" parent="1" name="BD_UKOWSKI">
+      <ObjectId>466</ObjectId>
+    </user>
+    <user id="181" parent="1" name="BD_WALAT">
+      <ObjectId>476</ObjectId>
+    </user>
+    <user id="182" parent="1" name="BD_WLODARSK">
+      <ObjectId>435</ObjectId>
+    </user>
+    <user id="183" parent="1" name="BD_WOJTAROW">
+      <ObjectId>473</ObjectId>
+    </user>
+    <user id="184" parent="1" name="BD_WPIECHAC">
+      <ObjectId>472</ObjectId>
+    </user>
+    <user id="185" parent="1" name="BD_WSIKORA">
+      <ObjectId>436</ObjectId>
+    </user>
+    <user id="186" parent="1" name="BD_ZAMOJTEL">
+      <ObjectId>464</ObjectId>
+    </user>
+    <user id="187" parent="1" name="BD_ZUBKO">
+      <ObjectId>449</ObjectId>
+    </user>
+    <user id="188" parent="1" name="CTXSYS">
+      <ObjectId>87</ObjectId>
+    </user>
+    <user id="189" parent="1" name="DBSFWUSER">
+      <ObjectId>37</ObjectId>
+    </user>
+    <user id="190" parent="1" name="DBSNMP">
+      <ObjectId>58</ObjectId>
+    </user>
+    <user id="191" parent="1" name="DIP">
+      <ObjectId>25</ObjectId>
+    </user>
+    <user id="192" parent="1" name="DVF">
+      <ObjectId>103</ObjectId>
+    </user>
+    <user id="193" parent="1" name="DVSYS">
+      <ObjectId>1279990</ObjectId>
+    </user>
+    <user id="194" parent="1" name="GGSYS">
+      <ObjectId>64</ObjectId>
+    </user>
+    <user id="195" parent="1" name="GSMADMIN_INTERNAL">
+      <ObjectId>22</ObjectId>
+    </user>
+    <user id="196" parent="1" name="GSMCATUSER">
+      <ObjectId>63</ObjectId>
+    </user>
+    <user id="197" parent="1" name="GSMROOTUSER">
+      <ObjectId>24</ObjectId>
+    </user>
+    <user id="198" parent="1" name="GSMUSER">
+      <ObjectId>23</ObjectId>
+    </user>
+    <user id="199" parent="1" name="LBACSYS">
+      <ObjectId>101</ObjectId>
+    </user>
+    <user id="200" parent="1" name="MARCJANDBA">
+      <ObjectId>107</ObjectId>
+    </user>
+    <user id="201" parent="1" name="MDDATA">
+      <ObjectId>99</ObjectId>
+    </user>
+    <user id="202" parent="1" name="MDSYS">
+      <ObjectId>93</ObjectId>
+    </user>
+    <user id="203" parent="1" name="NORTHWIND">
+      <ObjectId>109</ObjectId>
+    </user>
+    <user id="204" parent="1" name="OJVMSYS">
+      <ObjectId>85</ObjectId>
+    </user>
+    <user id="205" parent="1" name="OLAPSYS">
+      <ObjectId>96</ObjectId>
+    </user>
+    <user id="206" parent="1" name="ORACLE_OCM">
+      <ObjectId>41</ObjectId>
+    </user>
+    <user id="207" parent="1" name="ORDDATA">
+      <ObjectId>90</ObjectId>
+    </user>
+    <user id="208" parent="1" name="ORDPLUGINS">
+      <ObjectId>91</ObjectId>
+    </user>
+    <user id="209" parent="1" name="ORDSYS">
+      <ObjectId>89</ObjectId>
+    </user>
+    <user id="210" parent="1" name="OUTLN">
+      <ObjectId>13</ObjectId>
+    </user>
+    <user id="211" parent="1" name="REMOTE_SCHEDULER_AGENT">
+      <ObjectId>36</ObjectId>
+    </user>
+    <user id="212" parent="1" name="SIWIKDBA">
+      <ObjectId>281</ObjectId>
+    </user>
+    <user id="213" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>92</ObjectId>
+    </user>
+    <user id="214" parent="1" name="STUDENT">
+      <ObjectId>111</ObjectId>
+    </user>
+    <user id="215" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </user>
+    <user id="216" parent="1" name="SYS$UMF">
+      <ObjectId>50</ObjectId>
+    </user>
+    <user id="217" parent="1" name="SYSBACKUP">
+      <ObjectId>2147483617</ObjectId>
+    </user>
+    <user id="218" parent="1" name="SYSDG">
+      <ObjectId>2147483618</ObjectId>
+    </user>
+    <user id="219" parent="1" name="SYSKM">
+      <ObjectId>2147483619</ObjectId>
+    </user>
+    <user id="220" parent="1" name="SYSRAC">
+      <ObjectId>2147483620</ObjectId>
+    </user>
+    <user id="221" parent="1" name="SYSTEM">
+      <ObjectId>9</ObjectId>
+    </user>
+    <user id="222" parent="1" name="WMSYS">
+      <ObjectId>76</ObjectId>
+    </user>
+    <user id="223" parent="1" name="XDB">
+      <ObjectId>66</ObjectId>
+    </user>
+    <user id="224" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </user>
+    <sequence id="225" parent="30" name="HIBERNATE_SEQUENCE">
+      <ObjectId>203340</ObjectId>
+      <CreatedTimestamp>2021-04-29.15:57:40</CreatedTimestamp>
+      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="226" parent="30" name="ISEQ$$_192721">
+      <ObjectId>192722</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2021-03-11.17:47:26</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-11.17:47:26</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="227" parent="30" name="ISEQ$$_192730">
+      <ObjectId>192731</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2021-03-11.17:50:25</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-11.17:50:25</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="228" parent="30" name="ISEQ$$_192733">
+      <ObjectId>192734</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2021-03-11.17:50:25</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-11.17:50:25</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="229" parent="30" name="ISEQ$$_195498">
+      <ObjectId>195499</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2021-03-21.01:06:42</CreatedTimestamp>
+      <ModifiedTimestamp>2021-03-21.01:06:42</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="230" parent="30" name="APPUSER">
+      <ObjectId>203341</ObjectId>
+      <CreatedTimestamp>2021-04-29.15:57:40</CreatedTimestamp>
+      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="231" parent="230" name="USERID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="232" parent="230" name="DATEOFBIRTH">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="233" parent="230" name="FIRSTNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="234" parent="230" name="LASTNAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="235" parent="230" name="NICKNAME">
+      <Position>5</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <index id="236" parent="230" name="SYS_C0020224">
+      <ObjectId>203342</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2021-04-29.15:57:40</CreatedTimestamp>
+      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>USERID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="237" parent="230" name="SYS_C0020224">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0020224</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
