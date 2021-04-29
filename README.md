@@ -11,10 +11,12 @@ Paweł Hołowicki, Jakub Koźlak, Tomasz Koszarek
 
 
 ## Cel projektu
-Stworzenie prostej aplikacji konsolowej służącej do przechywania, udostępniania i porównywania swoich treningów kolarskich
+Stworzenie prostej aplikacji konsolowej/okienkowej służącej do zapisywania, udostępniania i porównywania swoich treningów kolarskich ze znajomymi.
 
 ## Technologia
-Aplikacja napisana zostanie w języku Java i będzie wykorzystywała framework Hibernate.
+* Java
+* Hibernate
+* Oracle Server
 
 ## Szczegóły projektu - główne feature’y aplikacji
 autentykacja użytkowników
