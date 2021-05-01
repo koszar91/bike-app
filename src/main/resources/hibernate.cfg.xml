@@ -5,15 +5,16 @@
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle8iDialect</property>
         <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
         <property name="hibernate.connection.url">jdbc:oracle:thin:@dbmanage.lab.ki.agh.edu.pl:1521:DBMANAGE</property>
-        <property name="hibernate.connection.username">BD_KOSZAREK</property>
         <property name="show_sql">true</property>
-        <!--       HASLOOOOOOOOOOOOOOOO    -->
-        <property name="hibernate.connection.password">TUTAJ TRZEBA HASŁO</property>
-        <!--       HASLOOOOOOOOOOOOOOOO    -->
+
+
+        <!--    LOGIN I HASLO DO BAZY DANYCH ORACLE NA SERVIE AGH    -->
+        <property name="hibernate.connection.username">TU TRZEBA LOGIN</property>
+        <property name="hibernate.connection.password">TU TRZEBA HASLO</property>
 
 
         <!--       DDL PRZEMYŚLEĆ         -->
-        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
 
 
         <!--        MAPOWANIE       -->

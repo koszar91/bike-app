@@ -1,28 +1,29 @@
-import database.SessionFactoryManager;
-import model.User;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 
-public class MainApp {
+public class MainApp extends Application {
 
-    public static void main(String[] args) {
-        System.out.println("\n----Start-----\n");
+    public static void main(String[] args) { launch(args); }
 
-        // create one user
-        User usr1 = new User("koszar91");
-
-        // get session factory, create session and add usr (in transaction)
-        SessionFactory sf = SessionFactoryManager.getSessionFactory();
-        Session session = sf.openSession();
-        Transaction tr = session.beginTransaction();
-
-        session.save(usr1);
-
-        tr.commit();
-        session.close();
-
-        System.out.println("\n-----Exit-----\n");
+    @Override
+    public void start(Stage stage) {
+        // set up window and main scene
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            BorderPane rootView = loader.load(getClass().getResource("mainView.fxml").openStream());
+            stage.setScene(new Scene(rootView));
+            stage.setTitle("Cycling World");
+            stage.setHeight(500);
+            stage.setWidth(800);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("FXML template reading resulted in failure");
+            System.exit(1);
+        }
     }
 }

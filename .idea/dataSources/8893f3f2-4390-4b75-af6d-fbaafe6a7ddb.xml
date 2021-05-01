@@ -305,7 +305,6 @@
       <CreatedTimestamp>2019-04-17.02:56:16</CreatedTimestamp>
       <ModifiedTimestamp>2019-09-14.18:24:00</ModifiedTimestamp>
       <IntrospectionVersion>200820</IntrospectionVersion>
-      <IntrospectionTimestamp>2021-04-29.15:15:20</IntrospectionTimestamp>
     </schema>
     <schema id="100" parent="1" name="REMOTE_SCHEDULER_AGENT">
       <ObjectId>36</ObjectId>
@@ -722,6 +721,7 @@
     </sequence>
     <table id="230" parent="30" name="APPUSER">
       <ObjectId>203341</ObjectId>
+      <Outdated>1</Outdated>
       <CreatedTimestamp>2021-04-29.15:57:40</CreatedTimestamp>
       <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
