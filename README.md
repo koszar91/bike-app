@@ -15,6 +15,7 @@ Stworzenie prostej aplikacji konsolowej/okienkowej służącej do zapisywania, u
 
 ## Technologia
 * Java
+* JavaFX
 * Hibernate
 * Oracle Server
 
