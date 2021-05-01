@@ -9,8 +9,8 @@
 
 
         <!--    LOGIN I HASLO DO BAZY DANYCH ORACLE NA SERVIE AGH    -->
-        <property name="hibernate.connection.username">TU TRZEBA LOGIN</property>
-        <property name="hibernate.connection.password">TU TRZEBA HASLO</property>
+        <property name="hibernate.connection.username">BD_KOSZAREK</property>
+        <property name="hibernate.connection.password">KozlakuPrzybywaj900</property>
 
 
         <!--       DDL PRZEMYŚLEĆ         -->

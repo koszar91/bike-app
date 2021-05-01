@@ -91,9 +91,9 @@
     <schema id="30" parent="1" name="BD_KOSZAREK">
       <ObjectId>489</ObjectId>
       <CreatedTimestamp>2021-03-11.17:47:26</CreatedTimestamp>
-      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <IntrospectionVersion>200820</IntrospectionVersion>
-      <IntrospectionTimestamp>2021-04-29.15:57:49</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2021-05-01.16:23:12</IntrospectionTimestamp>
       <Current>1</Current>
     </schema>
     <schema id="31" parent="1" name="BD_KOWALCZY">
@@ -682,9 +682,9 @@
       <ObjectId>2147483638</ObjectId>
     </user>
     <sequence id="225" parent="30" name="HIBERNATE_SEQUENCE">
-      <ObjectId>203340</ObjectId>
-      <CreatedTimestamp>2021-04-29.15:57:40</CreatedTimestamp>
-      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <ObjectId>203761</ObjectId>
+      <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
     <sequence id="226" parent="30" name="ISEQ$$_192721">
@@ -720,49 +720,108 @@
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <table id="230" parent="30" name="APPUSER">
-      <ObjectId>203341</ObjectId>
-      <Outdated>1</Outdated>
-      <CreatedTimestamp>2021-04-29.15:57:40</CreatedTimestamp>
-      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <ObjectId>203762</ObjectId>
+      <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="231" parent="230" name="USERID">
+    <table id="231" parent="30" name="ISFRIENDTO">
+      <ObjectId>203764</ObjectId>
+      <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="232" parent="230" name="USERID">
       <Position>1</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="232" parent="230" name="DATEOFBIRTH">
+    <column id="233" parent="230" name="DATEOFBIRTH">
       <Position>2</Position>
       <DataType>VARCHAR2(255 byte)|0s</DataType>
     </column>
-    <column id="233" parent="230" name="FIRSTNAME">
+    <column id="234" parent="230" name="FIRSTNAME">
       <Position>3</Position>
       <DataType>VARCHAR2(255 byte)|0s</DataType>
     </column>
-    <column id="234" parent="230" name="LASTNAME">
+    <column id="235" parent="230" name="LASTNAME">
       <Position>4</Position>
       <DataType>VARCHAR2(255 byte)|0s</DataType>
     </column>
-    <column id="235" parent="230" name="NICKNAME">
+    <column id="236" parent="230" name="NICKNAME">
       <Position>5</Position>
       <DataType>VARCHAR2(255 byte)|0s</DataType>
     </column>
-    <index id="236" parent="230" name="SYS_C0020224">
-      <ObjectId>203342</ObjectId>
+    <index id="237" parent="230" name="SYS_C0020270">
+      <ObjectId>203763</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2021-04-29.15:57:40</CreatedTimestamp>
-      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>USERID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="237" parent="230" name="SYS_C0020224">
+    <index id="238" parent="230" name="UK_IX1L3LQF9CG86F64L8Q9RL47D">
+      <ObjectId>203765</ObjectId>
+      <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>NICKNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="239" parent="230" name="SYS_C0020270">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2021-04-29.15:57:40</ModifiedTimestamp>
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <ColNames>USERID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0020224</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0020270</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <key id="240" parent="230" name="UK_IX1L3LQF9CG86F64L8Q9RL47D">
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
+      <ColNames>NICKNAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UK_IX1L3LQF9CG86F64L8Q9RL47D</UnderlyingIndexName>
+    </key>
+    <column id="241" parent="231" name="USER_USERID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="242" parent="231" name="FRIENDS_USERID">
+      <Position>2</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="243" parent="231" name="UK_A7A4Y8BBA84F0UHU158VT5PIO">
+      <ObjectId>203766</ObjectId>
+      <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>FRIENDS_USERID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="244" parent="231" name="UK_A7A4Y8BBA84F0UHU158VT5PIO">
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
+      <ColNames>FRIENDS_USERID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UK_A7A4Y8BBA84F0UHU158VT5PIO</UnderlyingIndexName>
+    </key>
+    <foreign-key id="245" parent="231" name="FKDM0S0G50I9RYNENXNTN6YTXEM">
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
+      <ColNames>USER_USERID</ColNames>
+      <RefSchemaName>BD_KOSZAREK</RefSchemaName>
+      <RefTableName>APPUSER</RefTableName>
+      <RefKeyName>SYS_C0020270</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="246" parent="231" name="FKDPM6HF0RHSGGVHL015TCYD4LP">
+      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
+      <ColNames>FRIENDS_USERID</ColNames>
+      <RefSchemaName>BD_KOSZAREK</RefSchemaName>
+      <RefTableName>APPUSER</RefTableName>
+      <RefKeyName>SYS_C0020270</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
   </database-model>
 </dataSource>

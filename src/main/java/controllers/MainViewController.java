@@ -1,31 +1,37 @@
 package controllers;
 
-import database.SessionFactoryManager;
 import javafx.fxml.FXML;
-import model.User;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 
 public class MainViewController {
-    public MainViewController() { }
-
 
     @FXML
-    public void initialize() {
-        System.out.println("view initialized");
+    private TextField textLogin;
+    @FXML
+    private Button buttonLogin;
 
-        User usr1 = new User("koszar91");
+    @FXML
+    private TextField textRegister;
+    @FXML
+    private Button buttonRegister;
 
-        SessionFactory sf = SessionFactoryManager.getSessionFactory();
-        Session session = sf.openSession();
-        Transaction tr = session.beginTransaction();
 
-        session.save(usr1);
+    public MainViewController() { }
 
-        tr.commit();
-        session.close();
+    @FXML
+    public void initialize() { }
+
+    @FXML
+    void loginHandler() {
+        String nick = this.textLogin.getText();
+        System.out.printf("login clicked, typed nick: '%s'\n", nick);
     }
 
+    @FXML
+    void registerHandler() {
+        String nick = this.textRegister.getText();
+        System.out.printf("register clicked, typed nick: '%s'\n", nick);
+    }
 }
