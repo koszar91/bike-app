@@ -1,15 +1,18 @@
 package controllers;
 
+import scene.AppScene;
+import scene.SceneManager;
 import services.DBService;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import model.User;
+import services.LogSessionService;
 
 import java.util.List;
 
 
-public class MainViewController {
+public class LoginViewController {
 
     // fxml controls
     @FXML
@@ -18,13 +21,20 @@ public class MainViewController {
     private Button buttonLogin;
     @FXML
     void loginHandler() {
-        if (!this.userExists(this.textLogin.getText())) {
+        User usr = this.userExists(this.textLogin.getText());
+
+        if (usr == null) {
             System.out.println("No such user. Register new account.");
             return;
         }
 
         System.out.printf("Successful login. Welcome %s\n", this.textLogin.getText());
         System.out.println("Redirecting to home view...");
+
+
+        LogSessionService.setCurrentUser(usr);
+
+        SceneManager.setScene(AppScene.HOME);
     }
 
     @FXML
@@ -33,7 +43,7 @@ public class MainViewController {
     private Button buttonRegister;
     @FXML
     void registerHandler() {
-        if (this.userExists(this.textRegister.getText())) {
+        if (this.userExists(this.textRegister.getText()) != null) {
             System.out.println("User exists! Log in.");
             return;
         }
@@ -47,14 +57,14 @@ public class MainViewController {
 
 
     // private methods
-    private boolean userExists(String nick) {
+    private User userExists(String nick) {
         List<User> users = DBService.getEntities(User.class);
 
         for (User usr : users)
             if (usr.getNickName().equals(nick))
-                return true;
+                return usr;
 
-        return false;
+        return null;
     }
 
 }
