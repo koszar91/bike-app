@@ -1,5 +1,6 @@
 package controllers;
 
+import org.hibernate.Session;
 import services.DBService;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -35,10 +36,12 @@ public class MainViewController {
     void registerHandler() {
         if (this.userExists(this.textRegister.getText())) {
             System.out.println("User exists! Log in.");
-            return;
-        }
 
-        System.out.println("Successful register. Log in.");
+        }else {
+            User new_user = new User(this.textRegister.getText());
+            DBService.addEntity(new_user);
+            System.out.println("Successful register. Log in.");
+        }
     }
 
     @FXML

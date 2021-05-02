@@ -1,0 +1,6 @@
+services\LogSessionService.class
+MainApp.class
+controllers\HomeViewController.class
+services\DBService.class
+controllers\MainViewController.class
+model\User.class

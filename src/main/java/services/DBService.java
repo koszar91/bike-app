@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import javax.swing.text.html.parser.Entity;
 import java.util.List;
 
 public class DBService {
@@ -21,6 +22,14 @@ public class DBService {
         session.close();
 
         return res;
+    }
+    public static  <T> void addEntity(T entity){
+        Session session = sessFact.openSession();
+        Transaction tx = session.beginTransaction();
+        session.save(entity);
+        tx.commit();
+        session.close();
+
     }
 
 }
