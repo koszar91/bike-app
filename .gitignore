@@ -1,3 +1,4 @@
-./.idea
-./target
-./.gradle
+.idea
+target
+.gradle
+lib
