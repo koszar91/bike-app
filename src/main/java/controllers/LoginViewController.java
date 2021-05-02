@@ -43,10 +43,15 @@ public class LoginViewController {
     private Button buttonRegister;
     @FXML
     void registerHandler() {
-        if (this.userExists(this.textRegister.getText()) != null) {
+        User usr = this.userExists(this.textLogin.getText());
+
+        if (usr != null) {
             System.out.println("User exists! Log in.");
             return;
         }
+
+        usr = new User(this.textRegister.getText());
+        DBService.addEntity(usr);
 
         System.out.println("Successful register. Log in.");
     }
