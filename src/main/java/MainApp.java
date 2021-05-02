@@ -14,7 +14,7 @@ public class MainApp extends Application {
         // set up window and main scene
         try {
             FXMLLoader loader = new FXMLLoader();
-            BorderPane rootView = loader.load(getClass().getResource("mainView.fxml").openStream());
+            BorderPane rootView = loader.load(getClass().getResource("loginView.fxml").openStream());
             stage.setScene(new Scene(rootView));
             stage.setTitle("Cycling World");
             stage.setHeight(500);
