@@ -24,6 +24,11 @@ public class Route {
 
     public Route() { }
 
+    public Route(int length, String name) {
+        this.length = length;
+        this.name = name;
+    }
+
 
     // boring getters and setters
     public String getName() { return name; }

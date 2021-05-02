@@ -7,6 +7,7 @@ import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 
+
 public class DBService {
     private static final Configuration config = new Configuration();
     private static final SessionFactory sessFact = config.configure().buildSessionFactory();

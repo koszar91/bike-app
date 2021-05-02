@@ -3,15 +3,13 @@ import javafx.stage.Stage;
 import scene.AppScene;
 import scene.SceneManager;
 
-import java.io.IOException;
-
 
 public class MainApp extends Application {
 
     public static void main(String[] args) { launch(args); }
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) {
         // setup scene menager
         SceneManager.setStage(stage);
 
