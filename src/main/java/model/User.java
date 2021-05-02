@@ -25,6 +25,9 @@ public class User {
     @JoinTable(name = "IsFriendTo")
     private List<User> friends = new LinkedList<>();
 
+    @OneToMany(mappedBy = "user")
+    private List<Ride> rides;
+
     public User() { }
     public User(String nickName) { this.nickName = nickName; }
 

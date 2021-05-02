@@ -5,7 +5,7 @@
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle8iDialect</property>
         <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
         <property name="hibernate.connection.url">jdbc:oracle:thin:@dbmanage.lab.ki.agh.edu.pl:1521:DBMANAGE</property>
-        <property name="show_sql">false</property>
+        <property name="show_sql">true</property>
 
 
         <!--    LOGIN I HASLO DO BAZY DANYCH ORACLE NA SERVIE AGH    -->
@@ -19,6 +19,8 @@
 
         <!--        MAPOWANIE       -->
         <mapping class="model.User"></mapping>
+        <mapping class="model.Route"></mapping>
+        <mapping class="model.Ride"></mapping>
 
 
     </session-factory>

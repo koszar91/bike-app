@@ -91,9 +91,9 @@
     <schema id="30" parent="1" name="BD_KOSZAREK">
       <ObjectId>489</ObjectId>
       <CreatedTimestamp>2021-03-11.17:47:26</CreatedTimestamp>
-      <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
+      <ModifiedTimestamp>2021-05-02.16:51:25</ModifiedTimestamp>
       <IntrospectionVersion>200820</IntrospectionVersion>
-      <IntrospectionTimestamp>2021-05-01.16:23:12</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2021-05-02.16:52:24</IntrospectionTimestamp>
       <Current>1</Current>
     </schema>
     <schema id="31" parent="1" name="BD_KOWALCZY">
@@ -731,28 +731,40 @@
       <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="232" parent="230" name="USERID">
+    <table id="232" parent="30" name="RIDE">
+      <ObjectId>203964</ObjectId>
+      <CreatedTimestamp>2021-05-02.16:51:24</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-02.16:51:25</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="233" parent="30" name="ROUTE">
+      <ObjectId>203966</ObjectId>
+      <CreatedTimestamp>2021-05-02.16:51:24</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-02.16:51:25</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="234" parent="230" name="USERID">
       <Position>1</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="233" parent="230" name="DATEOFBIRTH">
+    <column id="235" parent="230" name="DATEOFBIRTH">
       <Position>2</Position>
       <DataType>VARCHAR2(255 byte)|0s</DataType>
     </column>
-    <column id="234" parent="230" name="FIRSTNAME">
+    <column id="236" parent="230" name="FIRSTNAME">
       <Position>3</Position>
       <DataType>VARCHAR2(255 byte)|0s</DataType>
     </column>
-    <column id="235" parent="230" name="LASTNAME">
+    <column id="237" parent="230" name="LASTNAME">
       <Position>4</Position>
       <DataType>VARCHAR2(255 byte)|0s</DataType>
     </column>
-    <column id="236" parent="230" name="NICKNAME">
+    <column id="238" parent="230" name="NICKNAME">
       <Position>5</Position>
       <DataType>VARCHAR2(255 byte)|0s</DataType>
     </column>
-    <index id="237" parent="230" name="SYS_C0020270">
+    <index id="239" parent="230" name="SYS_C0020270">
       <ObjectId>203763</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
@@ -761,7 +773,7 @@
       <ColNames>USERID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="238" parent="230" name="UK_IX1L3LQF9CG86F64L8Q9RL47D">
+    <index id="240" parent="230" name="UK_IX1L3LQF9CG86F64L8Q9RL47D">
       <ObjectId>203765</ObjectId>
       <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
       <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
@@ -769,7 +781,7 @@
       <ColNames>NICKNAME</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="239" parent="230" name="SYS_C0020270">
+    <key id="241" parent="230" name="SYS_C0020270">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <ColNames>USERID</ColNames>
@@ -777,23 +789,23 @@
       <UnderlyingIndexName>SYS_C0020270</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="240" parent="230" name="UK_IX1L3LQF9CG86F64L8Q9RL47D">
+    <key id="242" parent="230" name="UK_IX1L3LQF9CG86F64L8Q9RL47D">
       <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <ColNames>NICKNAME</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>UK_IX1L3LQF9CG86F64L8Q9RL47D</UnderlyingIndexName>
     </key>
-    <column id="241" parent="231" name="USER_USERID">
+    <column id="243" parent="231" name="USER_USERID">
       <Position>1</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="242" parent="231" name="FRIENDS_USERID">
+    <column id="244" parent="231" name="FRIENDS_USERID">
       <Position>2</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="243" parent="231" name="UK_A7A4Y8BBA84F0UHU158VT5PIO">
+    <index id="245" parent="231" name="UK_A7A4Y8BBA84F0UHU158VT5PIO">
       <ObjectId>203766</ObjectId>
       <CreatedTimestamp>2021-05-01.16:16:59</CreatedTimestamp>
       <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
@@ -801,13 +813,13 @@
       <ColNames>FRIENDS_USERID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="244" parent="231" name="UK_A7A4Y8BBA84F0UHU158VT5PIO">
+    <key id="246" parent="231" name="UK_A7A4Y8BBA84F0UHU158VT5PIO">
       <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <ColNames>FRIENDS_USERID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>UK_A7A4Y8BBA84F0UHU158VT5PIO</UnderlyingIndexName>
     </key>
-    <foreign-key id="245" parent="231" name="FKDM0S0G50I9RYNENXNTN6YTXEM">
+    <foreign-key id="247" parent="231" name="FKDM0S0G50I9RYNENXNTN6YTXEM">
       <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <ColNames>USER_USERID</ColNames>
       <RefSchemaName>BD_KOSZAREK</RefSchemaName>
@@ -815,7 +827,7 @@
       <RefKeyName>SYS_C0020270</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="246" parent="231" name="FKDPM6HF0RHSGGVHL015TCYD4LP">
+    <foreign-key id="248" parent="231" name="FKDPM6HF0RHSGGVHL015TCYD4LP">
       <ModifiedTimestamp>2021-05-01.16:16:59</ModifiedTimestamp>
       <ColNames>FRIENDS_USERID</ColNames>
       <RefSchemaName>BD_KOSZAREK</RefSchemaName>
@@ -823,5 +835,96 @@
       <RefKeyName>SYS_C0020270</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
+    <column id="249" parent="232" name="RIDEID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="250" parent="232" name="ROUTEID">
+      <Position>2</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+    </column>
+    <column id="251" parent="232" name="USERID">
+      <Position>3</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+    </column>
+    <index id="252" parent="232" name="SYS_C0020298">
+      <ObjectId>203965</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2021-05-02.16:51:24</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-02.16:51:24</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>RIDEID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="253" parent="232" name="SYS_C0020298">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2021-05-02.16:51:24</ModifiedTimestamp>
+      <ColNames>RIDEID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0020298</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="254" parent="232" name="FKK19LFWO2QTJEC3MB3RG3BH3QV">
+      <ModifiedTimestamp>2021-05-02.16:51:25</ModifiedTimestamp>
+      <ColNames>ROUTEID</ColNames>
+      <RefSchemaName>BD_KOSZAREK</RefSchemaName>
+      <RefTableName>ROUTE</RefTableName>
+      <RefKeyName>SYS_C0020301</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="255" parent="232" name="FK1PWH71Y3UGNP8UVU5KI3YOFMR">
+      <ModifiedTimestamp>2021-05-02.16:51:25</ModifiedTimestamp>
+      <ColNames>USERID</ColNames>
+      <RefSchemaName>BD_KOSZAREK</RefSchemaName>
+      <RefTableName>APPUSER</RefTableName>
+      <RefKeyName>SYS_C0020270</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="256" parent="233" name="ROUTEID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="257" parent="233" name="LENGTH">
+      <Position>2</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="258" parent="233" name="NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <index id="259" parent="233" name="SYS_C0020301">
+      <ObjectId>203967</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2021-05-02.16:51:24</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-02.16:51:24</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ROUTEID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="260" parent="233" name="UK_75EOQWJ6W0QMC1JL2797T5HIL">
+      <ObjectId>203968</ObjectId>
+      <CreatedTimestamp>2021-05-02.16:51:25</CreatedTimestamp>
+      <ModifiedTimestamp>2021-05-02.16:51:25</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="261" parent="233" name="SYS_C0020301">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2021-05-02.16:51:24</ModifiedTimestamp>
+      <ColNames>ROUTEID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0020301</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="262" parent="233" name="UK_75EOQWJ6W0QMC1JL2797T5HIL">
+      <ModifiedTimestamp>2021-05-02.16:51:25</ModifiedTimestamp>
+      <ColNames>NAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UK_75EOQWJ6W0QMC1JL2797T5HIL</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>
