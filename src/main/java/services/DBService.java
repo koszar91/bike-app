@@ -23,4 +23,22 @@ public class DBService {
         return res;
     }
 
+    public static <T> void addEntity(T entity) {
+        Session session = sessFact.openSession();
+        Transaction tx = session.beginTransaction();
+        session.save(entity);
+        tx.commit();
+        session.close();
+    }
+
+    public static <T> void addEntities(List<T> entities) {
+        Session session = sessFact.openSession();
+        Transaction tx = session.beginTransaction();
+        for (T entity : entities) {
+            session.save(entity);
+        }
+        tx.commit();
+        session.close();
+    }
+
 }
