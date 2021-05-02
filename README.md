@@ -11,7 +11,7 @@ Paweł Hołowicki, Jakub Koźlak, Tomasz Koszarek
 
 
 ## Cel projektu
-Stworzenie prostej aplikacji konsolowej/okienkowej służącej do zapisywania, udostępniania i porównywania swoich treningów kolarskich ze znajomymi.
+Stworzenie prostej aplikacji okienkowej służącej do zapisywania, udostępniania i porównywania swoich treningów kolarskich ze znajomymi.
 
 ## Technologia
 * Java
