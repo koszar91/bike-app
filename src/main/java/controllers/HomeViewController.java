@@ -7,10 +7,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import model.Bike;
 import model.Ride;
 import model.User;
 import services.DBService;
-import services.LogSessionService;
+import services.UserSessionService;
 
 
 public class HomeViewController {
@@ -25,11 +26,17 @@ public class HomeViewController {
 
     @FXML
     public void initialize() {
-        this.currentUser = LogSessionService.getCurrentUser();
+        this.currentUser = UserSessionService.getCurrentUser();
 
         this.setupWelcomeText(this.currentUser.getNickName() + "!");
 
-        this.setupRidesList(FXCollections.observableArrayList(DBService.getEntities(Ride.class)));
+
+        this.setupRidesList(FXCollections.observableArrayList(DBService.getEntitiesFromDB(Ride.class)));
+
+        //setup
+
+        //setup...
+
 
     }
 
@@ -42,7 +49,9 @@ public class HomeViewController {
                         if (isEmpty || ride == null) {
                             setText(null);
                         } else {
-                            setText(ride.getRoute().getName());
+                            setText(ride.getRoute().getName()
+                                    + ", time: "
+                                    + ride.getRideDate());
                         }
                     }
                 }

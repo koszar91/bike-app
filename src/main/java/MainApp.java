@@ -10,14 +10,16 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) {
-        // setup scene menager
+        // setup scene manager
         SceneManager.setStage(stage);
+        SceneManager.setScene(AppScene.LOGIN);
 
         // set up window and main scene
-        SceneManager.setScene(AppScene.LOGIN);
         stage.setTitle("Cycling World");
         stage.setHeight(500);
         stage.setWidth(800);
         stage.show();
+
+        DataAdder.add();
     }
 }

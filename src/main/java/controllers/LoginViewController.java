@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.beans.binding.Bindings;
 import scene.AppScene;
 import scene.SceneManager;
 import services.DBService;
@@ -7,7 +8,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import model.User;
-import services.LogSessionService;
+import services.UserSessionService;
+
 
 import java.util.List;
 
@@ -32,7 +34,7 @@ public class LoginViewController {
         System.out.println("Redirecting to home view...");
 
 
-        LogSessionService.setCurrentUser(usr);
+        UserSessionService.setCurrentUser(usr);
 
         SceneManager.setScene(AppScene.HOME);
     }
@@ -51,19 +53,20 @@ public class LoginViewController {
         }
 
         usr = new User(this.textRegister.getText());
-        DBService.addEntity(usr);
+        DBService.addEntityToDB(usr);
 
         System.out.println("Successful register. Log in.");
     }
 
     @FXML
-    public void initialize() { }
-
+    public void initialize() {
+        this.setupButtons();
+    }
 
 
     // private methods
     private User userExists(String nick) {
-        List<User> users = DBService.getEntities(User.class);
+        List<User> users = DBService.getEntitiesFromDB(User.class);
 
         for (User usr : users)
             if (usr.getNickName().equals(nick))
@@ -72,4 +75,12 @@ public class LoginViewController {
         return null;
     }
 
+    private void setupButtons() {
+        this.buttonLogin
+                .disableProperty()
+                .bind(Bindings.isEmpty(this.textLogin.textProperty()));
+        this.buttonRegister
+                .disableProperty()
+                .bind(Bindings.isEmpty(this.textRegister.textProperty()));
+    }
 }

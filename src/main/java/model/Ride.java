@@ -1,7 +1,14 @@
 package model;
 
+import lombok.*;
+
 import javax.persistence.*;
 
+
+
+@NoArgsConstructor
+@EqualsAndHashCode
+@ToString
 @Entity
 public class Ride {
 
@@ -12,27 +19,20 @@ public class Ride {
 
     @ManyToOne
     @JoinColumn(name = "userID", referencedColumnName = "userID")
-    private User user;
+    private @Getter @Setter User user;
 
     @ManyToOne
     @JoinColumn(name = "routeID", referencedColumnName = "routeID")
-    private Route route;
+    private @Getter @Setter Route route;
 
+    private @Getter @Setter String rideDate;
 
-    public Ride() { }
+    private @Getter @Setter double rideTime;
 
-
-    // boring setters and getters
-    public User getUser() {
-        return user;
-    }
-    public void setUser(User user) {
+    public Ride(User user, Route route, String rideDate, double rideTime) {
         this.user = user;
-    }
-    public Route getRoute() {
-        return route;
-    }
-    public void setRoute(Route route) {
         this.route = route;
+        this.rideDate = rideDate;
+        this.rideTime = rideTime;
     }
 }

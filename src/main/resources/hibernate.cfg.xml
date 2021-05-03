@@ -14,13 +14,15 @@
 
 
         <!--       DDL PRZEMYŚLEĆ         -->
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
 
 
         <!--        MAPOWANIE       -->
         <mapping class="model.User"></mapping>
         <mapping class="model.Route"></mapping>
+        <mapping class="model.Bike"></mapping>
         <mapping class="model.Ride"></mapping>
+
 
 
     </session-factory>

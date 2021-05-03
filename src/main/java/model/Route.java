@@ -2,10 +2,15 @@ package model;
 
 
 import com.sun.istack.NotNull;
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.List;
 
 
+@NoArgsConstructor
+@EqualsAndHashCode
+@ToString
 @Entity
 public class Route {
 
@@ -15,24 +20,15 @@ public class Route {
 
     @NotNull
     @Column(unique = true)
-    private String name;
+    private @Getter @Setter String name;
 
-    private int length;
+    private @Getter @Setter int length;
 
     @OneToMany(mappedBy = "route")
-    private List<Ride> rides;
-
-    public Route() { }
+    private @Getter @Setter List<Ride> rides;
 
     public Route(int length, String name) {
         this.length = length;
         this.name = name;
     }
-
-
-    // boring getters and setters
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public int getLength() { return length; }
-    public void setLength(int length) { this.length = length; }
 }

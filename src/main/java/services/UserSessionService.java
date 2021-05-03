@@ -3,7 +3,8 @@ package services;
 
 import model.User;
 
-public class LogSessionService {
+
+public class UserSessionService {
     private static User currentUser;
 
     public static User getCurrentUser() {
@@ -11,6 +12,6 @@ public class LogSessionService {
     }
 
     public static void setCurrentUser(User currentUser) {
-        LogSessionService.currentUser = currentUser;
+        UserSessionService.currentUser = currentUser;
     }
 }

@@ -1,9 +1,15 @@
 package model;
 
+import com.sun.istack.Nullable;
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.LinkedList;
 import java.util.List;
 
+@NoArgsConstructor
+@EqualsAndHashCode
+@ToString
 @Entity
 @Table(name="AppUser")
 public class User {
@@ -13,50 +19,32 @@ public class User {
     private Integer userID;
 
 
-    private String firstName;
-    private String lastName;
+    private @Getter @Setter String firstName;
+    private @Getter @Setter String lastName;
 
     @Column(unique = true)
-    private String nickName;
+    private @Getter @Setter String nickName;
 
-    private String dateOfBirth;
+    private @Getter @Setter String dateOfBirth;
 
-    @OneToMany
+    @ManyToMany
     @JoinTable(name = "IsFriendTo")
-    private List<User> friends = new LinkedList<>();
+    private @Getter @Setter List<User> friends = new LinkedList<>();
 
     @OneToMany(mappedBy = "user")
-    private List<Ride> rides;
+    private @Getter @Setter List<Ride> rides;
 
-    public User() { }
+    @OneToOne
+    @Nullable
+    private @Getter @Setter Bike bike;
+
     public User(String nickName) { this.nickName = nickName; }
 
-
-    // boring getters and setters
-    public String getFirstName() {
-        return firstName;
-    }
-    public void setFirstName(String firstName) {
+    public User(String firstName, String lastName, String nickName, String dateOfBirth, Bike bike) {
         this.firstName = firstName;
-    }
-    public String getLastName() {
-        return lastName;
-    }
-    public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-    public String getNickName() {
-        return nickName;
-    }
-    public void setNickName(String nickName) {
         this.nickName = nickName;
-    }
-    public String getDateOfBirth() {
-        return dateOfBirth;
-    }
-    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+        this.bike = bike;
     }
-    public List<User> getFriends() { return friends; }
-    public void setFriends(List<User> friends) { this.friends = friends; }
 }
