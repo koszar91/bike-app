@@ -9,21 +9,32 @@ import javax.persistence.*;
 @EqualsAndHashCode
 @ToString
 @Entity
+@Table(name = "Bike")
 public class Bike {
 
     public enum BikeType {
-        ROAD,
-        MOUNTAIN,
-        HYBRID,
-        ELECTRIC,
-        TOURING
+        ROAD("Road"),
+        MOUNTAIN("Mountain"),
+        HYBRID("Hybrid"),
+        ELECTRIC("Electric"),
+        TOURING("Touring");
+
+        BikeType(String name) { this.name = name; }
+
+        @Getter
+        private final String name;
     }
 
     public enum Color {
-        Red,
-        Yellow,
-        Black,
-        White
+        RED("Red"),
+        YELLOW("Yellow"),
+        BLACK("Black"),
+        WHITE("White");
+
+        Color(String name) { this.name = name; }
+
+        @Getter
+        private final String name;
     }
 
     @Id
@@ -32,8 +43,16 @@ public class Bike {
 
     private @Getter @Setter Color color;
     private @Getter @Setter BikeType type;
+    private @Getter @Setter String name;
+
+    @OneToOne(mappedBy = "bike", optional = false)
+    private @Getter @Setter User user;
 
 
-    public Bike(Color color, BikeType type) { this.color = color; this.type = type; }
+    public Bike(String name, Color color, BikeType type) {
+        this.name = name;
+        this.color = color;
+        this.type = type;
+    }
 
 }

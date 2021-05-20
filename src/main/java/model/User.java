@@ -34,8 +34,8 @@ public class User {
     @OneToMany(mappedBy = "user")
     private @Getter @Setter List<Ride> rides;
 
-    @OneToOne
-    @Nullable
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "bikeID", unique = true)
     private @Getter @Setter Bike bike;
 
     public User(String nickName) { this.nickName = nickName; }
@@ -46,5 +46,10 @@ public class User {
         this.nickName = nickName;
         this.dateOfBirth = dateOfBirth;
         this.bike = bike;
+    }
+
+    public void makeFriendsWith(User otherUser) {
+        this.friends.add(otherUser);
+        otherUser.friends.add(this);
     }
 }

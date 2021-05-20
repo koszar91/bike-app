@@ -22,7 +22,6 @@ public class DBService {
                 .list();
         tx.commit();
         session.close();
-
         return res;
     }
 
@@ -46,9 +45,25 @@ public class DBService {
         Session session = sessFact.openSession();
         Transaction tx = session.beginTransaction();
         for (T entity : entities) {
-            session.save(entity);
+            session.saveOrUpdate(entity);
         }
         tx.commit();
         session.close();
     }
+
+    public static Bike getBikeForUser(User user) {
+        Session session = sessFact.openSession();
+        Transaction tx = session.beginTransaction();
+        Bike resBike = (Bike) session
+                .createQuery("FROM Bike where user = :owner")
+                .setParameter("owner", user)
+                .list()
+                .get(0);
+        tx.commit();
+        session.close();
+        return resBike;
+    }
+
+
+
 }
