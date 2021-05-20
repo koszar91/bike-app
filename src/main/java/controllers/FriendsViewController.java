@@ -21,6 +21,7 @@ public class FriendsViewController {
         SceneManager.setScene(AppScene.HOME);
     }
 
+
     @FXML
     private ListView<User> friendsListView;
 

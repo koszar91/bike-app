@@ -57,6 +57,7 @@ public class DataAdder {
         users.add(u1);users.add(u2);users.add(u3);users.add(u4);users.add(u5);
         DBService.addEntitiesToDB(users);
 
+
         // rides
         Ride ri1 = new Ride(u1, r1, "03-05-2021", 2.5);
         Ride ri2 = new Ride(u1, r2, "03-04-2021", 0.3);

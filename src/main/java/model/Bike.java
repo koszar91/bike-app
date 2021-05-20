@@ -42,6 +42,7 @@ public class Bike {
     private int bikeID;
 
     private @Getter @Setter Color color;
+
     private @Getter @Setter BikeType type;
     private @Getter @Setter String name;
 

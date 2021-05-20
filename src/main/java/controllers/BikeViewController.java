@@ -23,6 +23,7 @@ public class BikeViewController {
     private Label typeLabel;
     @FXML
     private Label colorLabel;
+
     @FXML
     private Label totalKilometersLabel;
     @FXML

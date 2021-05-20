@@ -27,6 +27,7 @@ public class Route {
     @OneToMany(mappedBy = "route")
     private @Getter @Setter List<Ride> rides;
 
+
     public Route(int length, String name) {
         this.length = length;
         this.name = name;

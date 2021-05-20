@@ -26,7 +26,6 @@ public class Ride {
     private @Getter @Setter Route route;
 
     private @Getter @Setter String rideDate;
-
     private @Getter @Setter double rideTime;
 
     public Ride(User user, Route route, String rideDate, double rideTime) {
