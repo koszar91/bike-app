@@ -47,7 +47,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="bestRideLabel" text="best ride with bike...">
+            <Label fx:id="bestRideLabel" text="best ride with bike..">
                <font>
                   <Font size="20.0" />
                </font>

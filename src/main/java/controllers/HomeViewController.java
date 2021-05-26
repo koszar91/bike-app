@@ -3,20 +3,44 @@ package controllers;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import model.Bike;
 import model.Ride;
 import model.User;
+import scene.AppScene;
+import scene.SceneManager;
 import services.DBService;
 import services.UserSessionService;
 
 
 public class HomeViewController {
 
-    private User currentUser;
+    @FXML
+    private Button logOutButton;
+    @FXML
+    private void logOutButtonHandler(ActionEvent actionEvent) {
+        UserSessionService.setCurrentUser(null);
+        SceneManager.setScene(AppScene.LOGIN);
+    }
+
+    @FXML
+    private Button friendsButton;
+    @FXML
+    private void friendsButtonHandler() {
+        SceneManager.setScene(AppScene.FRIENDS);
+    }
+
+    @FXML
+    private Button bikeButton;
+    @FXML
+    private void bikeButtonHandler() {
+        SceneManager.setScene(AppScene.BIKE);
+    }
 
     @FXML
     private Label welcomeLabel;
@@ -26,9 +50,7 @@ public class HomeViewController {
 
     @FXML
     public void initialize() {
-        this.currentUser = UserSessionService.getCurrentUser();
-
-        this.setupWelcomeText(this.currentUser.getNickName() + "!");
+        this.setupWelcomeText(UserSessionService.getCurrentUser().getNickName() + "!");
 
 
         this.setupRidesList(FXCollections.observableArrayList(DBService.getEntitiesFromDB(Ride.class)));
@@ -62,4 +84,7 @@ public class HomeViewController {
     private void setupWelcomeText(String name) {
         this.welcomeLabel.setText("Welcome " + name);
     }
+
+
+
 }
