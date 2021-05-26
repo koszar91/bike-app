@@ -11,6 +11,9 @@ import model.User;
 import scene.AppScene;
 import scene.SceneManager;
 import services.DBService;
+import services.UserSessionService;
+
+import java.util.List;
 
 public class FriendsViewController {
 
@@ -30,14 +33,12 @@ public class FriendsViewController {
 
     @FXML
     public void initialize() {
-        // TODO: BOTH TODOS HERE DEMAND WRITING DATABASE CODE. IN DB SERVICE CLASS.
+        User currentUser = UserSessionService.getCurrentUser();
+        List<User> friendsOfCurrentUser = DBService.getFriendsOfUser(currentUser);
+        this.setupFriendsList(FXCollections.observableArrayList(friendsOfCurrentUser));
 
-        // TODO: pass this function list of users that are friends of current user (not all users)
-        this.setupFriendsList(FXCollections.observableArrayList(DBService.getEntitiesFromDB(User.class)));
-
-        // TODO: pass this function list of rides that are user friends' rides
-        //  (not all rides)
-        setupFriendsRidesList(FXCollections.observableArrayList(DBService.getEntitiesFromDB(Ride.class)));
+        List<Ride> ridesOfUserFriends = DBService.getRidesOfFriendsOfUser(currentUser);
+        this.setupFriendsRidesList(FXCollections.observableArrayList(ridesOfUserFriends));
     }
 
     private void setupFriendsList(ObservableList<User> users) {

@@ -14,11 +14,10 @@ public class MainApp extends Application {
         SceneManager.setStage(stage);
         SceneManager.setScene(AppScene.LOGIN);
 
-
         // set up window and main scene
         stage.setTitle("Cycling World");
-        stage.setHeight(500);
-        stage.setWidth(800);
+        stage.setHeight(550);
+        stage.setWidth(850);
         stage.show();
 
         DataAdder.add();

@@ -23,7 +23,5 @@
         <mapping class="model.Bike"></mapping>
         <mapping class="model.Ride"></mapping>
 
-
-
     </session-factory>
 </hibernate-configuration>

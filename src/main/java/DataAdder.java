@@ -65,8 +65,9 @@ public class DataAdder {
         Ride ri4 = new Ride(u1, r3, "01-05-2021", 1.13);
         Ride ri5 = new Ride(u1, r1, "22-04-2021", 2.23);
         Ride ri6 = new Ride(u1, r6, "03-05-2021", 0.5);
+        Ride ri7 = new Ride(u2, r5, "01=04-2020", 1.);
         List<Ride> rides = new LinkedList<>();
-        rides.add(ri1);rides.add(ri2);rides.add(ri3);rides.add(ri4);rides.add(ri5);rides.add(ri6);
+        rides.add(ri1);rides.add(ri2);rides.add(ri3);rides.add(ri4);rides.add(ri5);rides.add(ri6);rides.add(ri7);
         DBService.addEntitiesToDB(rides);
     }
 }

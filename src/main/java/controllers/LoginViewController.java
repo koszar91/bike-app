@@ -66,7 +66,7 @@ public class LoginViewController {
 
     // private methods
     private User userExists(String nick) {
-        List<User> users = DBService.getEntitiesFromDB(User.class);
+        List<User> users = DBService.getAllEntitiesOfClass(User.class);
 
         for (User usr : users)
             if (usr.getNickName().equals(nick))
