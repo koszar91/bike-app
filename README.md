@@ -27,8 +27,9 @@ oglądanie treningów innych użytkowników
 dostęp do rankingów rankingów
 porównywanie osiągów (np. średnich czasów na trasach)
 
-## Model danych
+## Model danych!
 
+[schema](https://user-images.githubusercontent.com/72392522/119807540-83061680-bee3-11eb-9709-ad7029ef2bdd.jpg)
 
 ## Flow aplikacji:
 
