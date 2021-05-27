@@ -58,3 +58,8 @@ różnicę, oraz miejsce, które zajmuje w rankingu tej trasy.
 
 ![bike](https://user-images.githubusercontent.com/72392522/119807146-27d42400-bee3-11eb-8a8e-2cfea941ee75.jpg)
 
+
+## TODO:
+1. opis struktury kodu
+2. zrzut bazy
+3. analiza sposobu, w jaki hibernate wykonuje zapytania do bazy i co z tego wyciągamy
