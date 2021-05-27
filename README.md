@@ -20,12 +20,10 @@ Stworzenie prostej aplikacji okienkowej służącej do zapisywania, udostępnian
 * Oracle Server
 
 ## Szczegóły projektu - główne feature’y aplikacji
-autentykacja użytkowników
-udostępnienie swojego treningu kolarskiego
-dodawanie znajomych
-oglądanie treningów innych użytkowników
-dostęp do rankingów rankingów
-porównywanie osiągów (np. średnich czasów na trasach)
+Autentykacja użytkowników
+Udostępnienie swojego treningu kolarskiego
+Przeglądanie treningów znajomych
+Porównywanie się na trasach
 
 ## Model danych!
 
