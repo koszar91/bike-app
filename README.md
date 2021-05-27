@@ -15,6 +15,7 @@ Stworzenie prostej aplikacji okienkowej służącej do zapisywania, udostępnian
 ## Technologia
 * Java
 * JavaFX
+* Lombok
 * Hibernate
 * Oracle Server
 
