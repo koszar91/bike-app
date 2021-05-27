@@ -35,26 +35,26 @@ porównywanie osiągów (np. średnich czasów na trasach)
 Umożliwia on stworzenie konta (identyfikowanego nickiem) lub
 zalogowanie się do już istniejącego.
 
---screen--
+![log](https://user-images.githubusercontent.com/72392522/119807065-10953680-bee3-11eb-9bda-69175f8a798b.jpg)
 
 2. Ekran domowy pozwala na monitorowanie swoich ostatnich przejazdów
 i dodanie nowego za pomocą formularza. Pozwala też na przekierowanie do
 widoków Friends, Bike oraz Log out, za pomocą przycisków.
 Możliwe jest też przejście do ekranu dedykowanego jednej trasie, przez kliknięcie na swój przejazd na tej trasie.
 
---screen--
+![home](https://user-images.githubusercontent.com/72392522/119807074-13902700-bee3-11eb-90aa-a741395e8934.jpg)
 
 3. Ekran Friends pokazuje listę znajomych oraz listę ich ostatnich przejazdów.
 
---screen--
+![friends](https://user-images.githubusercontent.com/72392522/119807096-1ab73500-bee3-11eb-951b-9fe561d7c9d8.jpg)
 
 4. Ekran Route umożliwia przeglądnięcie wszystkich przejazdów na wybranej trasie.
 Pokazuje też, jaki jest najlepszy czas na tej trasie, czas aktualnego użytkownika,
 różnicę, oraz miejsce, które zajmuje w rankingu tej trasy.
 
---screen--
+![route](https://user-images.githubusercontent.com/72392522/119807123-20ad1600-bee3-11eb-8994-6da13172be0f.jpg)
 
 5. Bike View pokazuje informacje o aktualnym rowerze użytkownika.
 
---screen--
+![bike](https://user-images.githubusercontent.com/72392522/119807146-27d42400-bee3-11eb-8a8e-2cfea941ee75.jpg)
 
