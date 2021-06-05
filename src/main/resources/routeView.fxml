@@ -13,10 +13,10 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RouteViewController">
    <left>
-      <ListView fx:id="ridesListView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="397.0" BorderPane.alignment="CENTER" />
+      <ListView fx:id="ridesListView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#rideClickedHandler" prefHeight="355.0" prefWidth="397.0" BorderPane.alignment="CENTER" />
    </left>
    <center>
-      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="324.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="324.0" BorderPane.alignment="CENTER">
          <children>
             <Label text="Best time:">
                <font>
@@ -36,12 +36,17 @@
                </font>
             </Label>
             <TextField fx:id="differenceTextField" editable="false" />
-            <Label text="You are:">
+            <Label text="Your position:">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
             <TextField fx:id="youAreTextField" editable="false" />
+            <Button fx:id="addFriendButton" disable="true" mnemonicParsing="false" onAction="#addFriendButtonHandler" text="Add friend">
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+            </Button>
          </children>
          <padding>
             <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />

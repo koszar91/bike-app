@@ -58,14 +58,16 @@ public class DBService {
     public static Bike getBikeForUser(User user) {
         Session session = sessFact.openSession();
         Transaction tx = session.beginTransaction();
-        Bike resBike = (Bike) session
+        List<Bike> bikes = session
                 .createQuery("FROM Bike where user = :owner")
                 .setParameter("owner", user)
-                .list()
-                .get(0);
+                .list();
         tx.commit();
         session.close();
-        return resBike;
+        if (bikes.isEmpty()) {
+            return null;
+        }
+        return bikes.get(0);
     }
 
     public static List<Ride> getRidesOfUser(User user) {
@@ -91,7 +93,10 @@ public class DBService {
         result = new LinkedList<>(copyUser.getFriends());
         tx.commit();
         session.close();
-        return result.stream().filter(usr -> !usr.getNickName().equals(user.getNickName())).collect(Collectors.toList());
+        return result.stream().filter(usr -> !usr
+                            .getNickName()
+                            .equals(user.getNickName()))
+                            .collect(Collectors.toList());
     }
 
     public static List<Ride> getRidesOfFriendsOfUser(User user) {
@@ -100,8 +105,10 @@ public class DBService {
         List<Ride> friendsRides = new LinkedList<>();
         Transaction tx = session.beginTransaction();
         for(User i : friendsList) {
-            List<Ride> tmpList = session.createQuery("FROM Ride where user = :user")
-                    .setParameter("user", i).getResultList();
+            List<Ride> tmpList = session
+                    .createQuery("FROM Ride where user = :user")
+                    .setParameter("user", i)
+                    .getResultList();
             friendsRides.addAll(tmpList);
         }
         tx.commit();
@@ -110,7 +117,6 @@ public class DBService {
     }
 
     public static Route getRouteWithName(String routeName) {
-        System.out.println("You want to get route with name: " + routeName);
         Session session = sessFact.openSession();
         Transaction tx = session.beginTransaction();
         Route route = (Route) session

@@ -2,7 +2,6 @@ package controllers;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import model.Ride;
@@ -41,6 +40,24 @@ public class RouteViewController {
         UserSessionService.setSelectedRoute(null);
         SceneManager.setScene(AppScene.HOME);
     }
+    @FXML
+    private void rideClickedHandler() {
+        this.addFriendButton.setDisable(false);
+    }
+    @FXML
+    private Button addFriendButton;
+    @FXML
+    private void addFriendButtonHandler() {
+        ObservableList selectedIndices =
+                this.ridesListView.getSelectionModel().getSelectedIndices();
+        Integer selectedIdx = (Integer) selectedIndices.get(0);
+        User newFriend = this.rides.get(selectedIdx).getUser();
+        if (newFriend.getNickName().equals(this.currentUser.getNickName())) {
+            return;
+        }
+        DBService.makeFriends(this.currentUser, newFriend);
+        this.addFriendButton.setDisable(true);
+    }
 
     @FXML
     public void initialize() {
@@ -70,8 +87,7 @@ public class RouteViewController {
             Ride r = this.rides.get(i);
             bestTime = Math.min(bestTime, r.getRideTime());
 
-            if ( r.getRideTime() <= yourTime &&
-                    r.getUser().getNickName().equals(this.currentUser.getNickName())) {
+            if ( r.getRideTime() < yourTime && r.getUser().getNickName().equals(this.currentUser.getNickName())) {
                 yourTime = r.getRideTime();
                 difference = Math.abs(yourTime - bestTime);
                 yourPosition = i + 1;
@@ -98,7 +114,9 @@ public class RouteViewController {
                                     + ", date: "
                                     + ride.getRideDate()
                                     + ", time: "
-                                    + String.valueOf(ride.getRideTime()));
+                                    + String.valueOf(ride.getRideTime()
+                                    + ", by: ")
+                                    + ride.getUser().getNickName());
                         }
                     }
                 }

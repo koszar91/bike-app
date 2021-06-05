@@ -20,6 +20,7 @@ public class MainApp extends Application {
         stage.setWidth(850);
         stage.show();
 
+        // ADDING SOME SAMPLE, HARDCODED DATA
         DataAdder.add();
     }
 }

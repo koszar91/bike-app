@@ -1,6 +1,5 @@
 package model;
 
-import com.sun.istack.Nullable;
 import lombok.*;
 
 import javax.persistence.*;
@@ -17,7 +16,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer userID;
-
 
     private @Getter @Setter String firstName;
     private @Getter @Setter String lastName;

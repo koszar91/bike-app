@@ -65,9 +65,33 @@ public class DataAdder {
         Ride ri4 = new Ride(u1, r3, "01-05-2021", 1.13);
         Ride ri5 = new Ride(u1, r1, "22-04-2021", 2.23);
         Ride ri6 = new Ride(u1, r6, "03-05-2021", 0.5);
-        Ride ri7 = new Ride(u2, r5, "01=04-2020", 1.);
+        Ride ri7 = new Ride(u1, r6, "04-05-2021", 0.45);
+        Ride ri8 = new Ride(u1, r6, "05-05-2021", 0.55);
+        Ride ri9 = new Ride(u1, r6, "06-05-2021", 0.12);
+        Ride ri10 = new Ride(u1, r6, "07-05-2021", 0.52);
+        Ride ri11 = new Ride(u1, r6, "08-05-2021", 0.51);
+        Ride ri12 = new Ride(u1, r6, "09-05-2021", 0.59);
+        Ride ri13 = new Ride(u1, r6, "03-05-2021", 0.4);
+
+
+        Ride ri14 = new Ride(u1, r5, "10-04-2020", 1.);
+        Ride ri15 = new Ride(u1, r5, "11-04-2020", 2.1);
+        Ride ri16 = new Ride(u1, r5, "12-04-2020", 1.0);
+        Ride ri17 = new Ride(u1, r5, "13-04-2020", 1.1);
+        Ride ri18 = new Ride(u1, r5, "14-04-2020", 1.82);
+        Ride ri19 = new Ride(u1, r5, "15-04-2020", 1.45);
+        Ride ri20 = new Ride(u1, r5, "16-04-2020", 1.11);
+        Ride ri21 = new Ride(u1, r5, "17-04-2020", 1.11);
+        Ride ri22 = new Ride(u1, r5, "18-04-2020", 1.2);
+        Ride ri23 = new Ride(u1, r5, "19-04-2020", 1.4);
+        Ride ri24 = new Ride(u1, r5, "20-04-2020", 1.1);
+
+
         List<Ride> rides = new LinkedList<>();
         rides.add(ri1);rides.add(ri2);rides.add(ri3);rides.add(ri4);rides.add(ri5);rides.add(ri6);rides.add(ri7);
+        rides.add(ri8);rides.add(ri9);rides.add(ri10);rides.add(ri11);rides.add(ri12);rides.add(ri13);rides.add(ri14);
+        rides.add(ri15);rides.add(ri16);rides.add(ri17);rides.add(ri18);rides.add(ri19);rides.add(ri20);rides.add(ri21);
+        rides.add(ri22);rides.add(ri23);rides.add(ri24);
         DBService.addEntitiesToDB(rides);
     }
 }

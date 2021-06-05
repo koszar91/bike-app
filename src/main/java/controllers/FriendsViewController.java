@@ -24,7 +24,6 @@ public class FriendsViewController {
         SceneManager.setScene(AppScene.HOME);
     }
 
-
     @FXML
     private ListView<User> friendsListView;
 
@@ -69,7 +68,9 @@ public class FriendsViewController {
                         } else {
                             setText(ride.getRoute().getName()
                                     + ", time: "
-                                    + ride.getRideDate());
+                                    + ride.getRideDate()
+                                    + ", by: "
+                                    + ride.getUser().getNickName());
                         }
                     }
                 }

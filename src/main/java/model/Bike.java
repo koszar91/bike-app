@@ -16,8 +16,7 @@ public class Bike {
         ROAD("Road"),
         MOUNTAIN("Mountain"),
         HYBRID("Hybrid"),
-        ELECTRIC("Electric"),
-        TOURING("Touring");
+        ELECTRIC("Electric");
 
         BikeType(String name) { this.name = name; }
 
@@ -46,7 +45,7 @@ public class Bike {
     private @Getter @Setter BikeType type;
     private @Getter @Setter String name;
 
-    @OneToOne(mappedBy = "bike", optional = false)
+    @OneToOne(mappedBy = "bike", cascade = {CascadeType.PERSIST}, optional = false)
     private @Getter @Setter User user;
 
 
