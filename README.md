@@ -47,7 +47,7 @@ Możliwe jest też przejście do ekranu dedykowanego jednej trasie, przez klikni
 
 3. Ekran Friends pokazuje listę znajomych oraz listę ich ostatnich przejazdów.
 
-![friends](https://user-images.githubusercontent.com/72392522/119807096-1ab73500-bee3-11eb-951b-9fe561d7c9d8.jpg)
+![friends](https://user-images.githubusercontent.com/72392522/120905669-faf6de00-c653-11eb-8d19-89ff1fde2973.jpg)
 
 4. Ekran Route umożliwia przeglądnięcie wszystkich przejazdów na wybranej trasie.
 Pokazuje też, jaki jest najlepszy czas na tej trasie, czas aktualnego użytkownika,
