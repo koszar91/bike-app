@@ -15,6 +15,7 @@ Stworzenie prostej aplikacji okienkowej służącej do zapisywania, udostępnian
 ## Technologia
 * Java
 * JavaFX
+* SceneBuilder
 * Lombok
 * Hibernate
 * Oracle Server
@@ -70,9 +71,19 @@ Struktura kodu oparta jest na architekturze Model-View-Controller.
 Widoki wyświetlane w oknie aplikacji są zdefiniowane w plikach fxml.
 Do każdego widoku podporządkowana jest klasa będąca kontrolerem, odpowiedzialna za wypelnianie widoku danymi.
 Pośredniczy też ona przy interakcji użytkownika z danymi.
+Działanie to jest zrealizowane jest dzięki bibliotece JavaFX.
 Klasy kontrolerów pobierają dane z Bazy Danych pośrednio. Jest za to odpowiedzialna klasa DBService,
 zawierająca statyczne metody umożliwiające kontakt z bazą danych, takie jak dodawanie i wyciąganie obiektów z bazy.
 Funkcje te realizowane są dzięki bibliotece Hibernate, oferującej wygodne API o dużych mozliwościach.
+
+Klasy modelu, posiadające wiele właściwości z getterami i setterami mają zmniejszoną objętość dzięki bibliotece Lombok.
+Pozwala ona na korzystanie z getterów, setteróe, konstruktorów bezargumentowych itp. bez pisania ich kodu.
+Udostępnia ona dekoratory, które można przypisać klasom i ich atrybutom. Zwiększa to czytelność kodu.
+
+W projekcie zawarliśmy klasą pomocniczą DataAdder, posiadającą jedną metodę add(). W tej metodzie zahardcode'owane są przykładowe dane,
+którymi można wypełnić bazę danych. Jest to przydatne podczas korzystania z opcji create-drop, udostępnionej przez Hibernate'a,
+polegającej na każdorazowym usunięciu i stworzeniu bazy danych przy uruchamianiu aplikacji.
+Pozwala to na swobodne zmiany w modelu podczas tworzenia aplikacji.
 
 ## Sczegóły pracy biblioteki Hibernate na przykładach z kodu
 
@@ -101,7 +112,10 @@ Opracje joinowania są wykonywane przez Hibernate'a, który po pobraniu danych o
 instancjonując ich jako obiekty zawarte w liście. Jest to znaczne ułatwienie, gwarantujące nie tylko wygodę ale również odpowiedni poziom abstrakcji, zwalniając programistę z konieczności hardcode'owania zapytań.
 Uzyskanie listy znajomych na podstawie jednego obiektu wyciągniętego z bazy danych musi odbyć się 'wewnątrz sesji'.
 
-## TODO:
-1. opis struktury kodu
-2. zrzut bazy
-3. analiza sposobu, w jaki hibernate wykonuje zapytania do bazy i co z tego wyciągamy
+
+## Baza Danych, z której korzysta aplikacja
+
+Serwerem bazy danych SQL, z kótego korzystamy jest Oracle. Baza znajduje się w budynku uczelni, dostęp do niej odbywa się poprzez VPN.
+W polączniu z tworzeniem i usuwaniem bazy przy starcie aplikacji umożliwia to korzystanie z projektu z innych maszyn niż nasze.
+Przykładowe dane tworzone są we wspomniajej klasie DataAdder, której metoda add(); wywołana jest w klasie w metodzie main().
+Zatem aby skorzystać z naszej aplikacji wystarczy tylko skompilować kod źródłowy i uruchomić plik wykonywalny.
