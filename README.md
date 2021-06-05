@@ -9,30 +9,57 @@ Paweł Hołowicki, Jakub Koźlak, Tomasz Koszarek
 
 
 
-
 ## Cel projektu
 Stworzenie prostej aplikacji okienkowej służącej do zapisywania, udostępniania i porównywania swoich treningów kolarskich ze znajomymi.
 
 ## Technologia
 * Java
 * JavaFX
+* Lombok
 * Hibernate
 * Oracle Server
 
 ## Szczegóły projektu - główne feature’y aplikacji
-autentykacja użytkowników
-udostępnienie swojego treningu kolarskiego
-dodawanie znajomych
-oglądanie treningów innych użytkowników
-tworzenie i oglądanie rankingów
-porównywanie osiągów (np. średnich czasów na trasach)
+Autentykacja użytkowników
+Udostępnienie swojego treningu kolarskiego
+Przeglądanie treningów znajomych
+Porównywanie się na trasach
 
-## Wstępny model danych
-* “Użytkownik”, który posiada swoje minimalne dane osobowe oraz wskazania do swoich znajomych (relacja n:n)
-* “Rower” (relacja  użytkownikiem), parametry pojazdu
-* “Trening” lub “przejazd” rozumiany jest jako zestaw danych postaci: data, godzina rozpoczęcia, godzina zakończenia, trasa, zdjęcie, kategoria (kolarstwo górskie lub szosowe        (hierarchia typów)
-* “Trasa” rozróżniana przy pomocy opisu, posiada informacje o lokalizacji, długości, różnicy wysokości (relacja z treningiem)
+## Model danych!
 
-## Wygląd aplikacji 
-Użytkownikowi udostępniany jest ekran logowania/rejestracji, następnie ekran domowy pokazujący ostatnie przejazdy, średnie prędkości, kalendarz z zaznaczonymi datami przejazdów.
-Do porównywania treningów z innymi służył będzie widok zawierający rankingi/statystyki, zarówno ogólne jak i np. miesięczne, segregowane kategorią lub płcią
+[schema](https://user-images.githubusercontent.com/72392522/119807540-83061680-bee3-11eb-9709-ad7029ef2bdd.jpg)
+
+## Flow aplikacji:
+
+1. Po uruchomieniu pojawia się ekran logowania i rejestracji.
+Umożliwia on stworzenie konta (identyfikowanego nickiem) lub
+zalogowanie się do już istniejącego.
+
+![log](https://user-images.githubusercontent.com/72392522/119807065-10953680-bee3-11eb-9bda-69175f8a798b.jpg)
+
+2. Ekran domowy pozwala na monitorowanie swoich ostatnich przejazdów
+i dodanie nowego za pomocą formularza. Pozwala też na przekierowanie do
+widoków Friends, Bike oraz Log out, za pomocą przycisków.
+Możliwe jest też przejście do ekranu dedykowanego jednej trasie, przez kliknięcie na swój przejazd na tej trasie.
+
+![home](https://user-images.githubusercontent.com/72392522/119807074-13902700-bee3-11eb-90aa-a741395e8934.jpg)
+
+3. Ekran Friends pokazuje listę znajomych oraz listę ich ostatnich przejazdów.
+
+![friends](https://user-images.githubusercontent.com/72392522/119807096-1ab73500-bee3-11eb-951b-9fe561d7c9d8.jpg)
+
+4. Ekran Route umożliwia przeglądnięcie wszystkich przejazdów na wybranej trasie.
+Pokazuje też, jaki jest najlepszy czas na tej trasie, czas aktualnego użytkownika,
+różnicę, oraz miejsce, które zajmuje w rankingu tej trasy.
+
+![route](https://user-images.githubusercontent.com/72392522/119807123-20ad1600-bee3-11eb-8994-6da13172be0f.jpg)
+
+5. Bike View pokazuje informacje o aktualnym rowerze użytkownika.
+
+![bike](https://user-images.githubusercontent.com/72392522/119807146-27d42400-bee3-11eb-8a8e-2cfea941ee75.jpg)
+
+
+## TODO:
+1. opis struktury kodu
+2. zrzut bazy
+3. analiza sposobu, w jaki hibernate wykonuje zapytania do bazy i co z tego wyciągamy
