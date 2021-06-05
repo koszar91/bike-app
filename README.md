@@ -53,7 +53,7 @@ Możliwe jest też przejście do ekranu dedykowanego jednej trasie, przez klikni
 Pokazuje też, jaki jest najlepszy czas na tej trasie, czas aktualnego użytkownika,
 różnicę, oraz miejsce, które zajmuje w rankingu tej trasy.
 
-![route](https://user-images.githubusercontent.com/72392522/119807123-20ad1600-bee3-11eb-8994-6da13172be0f.jpg)
+![route](https://user-images.githubusercontent.com/72392522/120906147-52e31400-c657-11eb-97ea-997963bc872d.jpg)
 
 5. Bike View pokazuje informacje o aktualnym rowerze użytkownika.
 
