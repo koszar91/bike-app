@@ -52,12 +52,13 @@ Możliwe jest też przejście do ekranu dedykowanego jednej trasie, przez klikni
 4. Ekran Route umożliwia przeglądnięcie wszystkich przejazdów na wybranej trasie.
 Pokazuje też, jaki jest najlepszy czas na tej trasie, czas aktualnego użytkownika,
 różnicę, oraz miejsce, które zajmuje w rankingu tej trasy.
+Po kliknięciu w trasę przejechaną przez innego użykownika możliwe jest dodanie go do znajomych, poprzez odblokowanie przycisku Add Friend.
 
 ![route](https://user-images.githubusercontent.com/72392522/120906147-52e31400-c657-11eb-97ea-997963bc872d.jpg)
 
-5. Bike View pokazuje informacje o aktualnym rowerze użytkownika.
+5. Bike View pokazuje informacje o aktualnym rowerze użytkownika oraz umożliwia ich zaktualizowanie.
 
-![bike](https://user-images.githubusercontent.com/72392522/119807146-27d42400-bee3-11eb-8a8e-2cfea941ee75.jpg)
+![bike](https://user-images.githubusercontent.com/72392522/120906184-a0f81780-c657-11eb-9bc9-61ca57da7bee.jpg)
 
 
 ## TODO:
