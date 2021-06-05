@@ -117,5 +117,5 @@ Uzyskanie listy znajomych na podstawie jednego obiektu wyciągniętego z bazy da
 
 Serwerem bazy danych SQL, z kótego korzystamy jest Oracle. Baza znajduje się w budynku uczelni, dostęp do niej odbywa się poprzez VPN.
 W polączniu z tworzeniem i usuwaniem bazy przy starcie aplikacji umożliwia to korzystanie z projektu z innych maszyn niż nasze.
-Przykładowe dane tworzone są we wspomniajej klasie DataAdder, której metoda add(); wywołana jest w klasie w metodzie main().
+Przykładowe dane tworzone są we wspomniajej klasie DataAdder, której metoda add(); wywołana jest w klasie w mainie.
 Zatem aby skorzystać z naszej aplikacji wystarczy tylko skompilować kod źródłowy i uruchomić plik wykonywalny.
