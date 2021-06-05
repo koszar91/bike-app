@@ -33,7 +33,8 @@ Porównywanie się na trasach
 
 1. Po uruchomieniu pojawia się ekran logowania i rejestracji.
 Umożliwia on stworzenie konta (identyfikowanego nickiem) lub
-zalogowanie się do już istniejącego.
+zalogowanie się do już istniejącego. Przy próbie zalogowania się na nieistniejące konto
+lub zarejestrowania istniejącego już konta, aplikacja wyświetli komunikat o tym, że jest to niemożliwe.
 
 ![log](https://user-images.githubusercontent.com/72392522/119807065-10953680-bee3-11eb-9bda-69175f8a798b.jpg)
 
@@ -42,7 +43,7 @@ i dodanie nowego za pomocą formularza. Pozwala też na przekierowanie do
 widoków Friends, Bike oraz Log out, za pomocą przycisków.
 Możliwe jest też przejście do ekranu dedykowanego jednej trasie, przez kliknięcie na swój przejazd na tej trasie.
 
-![home](https://user-images.githubusercontent.com/72392522/119807074-13902700-bee3-11eb-90aa-a741395e8934.jpg)
+![home](https://user-images.githubusercontent.com/72392522/120905544-13b2c400-c653-11eb-943d-917ddae536b7.jpg)
 
 3. Ekran Friends pokazuje listę znajomych oraz listę ich ostatnich przejazdów.
 
