@@ -56,7 +56,7 @@ Po kliknięciu w trasę przejechaną przez innego użykownika możliwe jest doda
 
 ![route](https://user-images.githubusercontent.com/72392522/120906147-52e31400-c657-11eb-97ea-997963bc872d.jpg)
 
-5. Bike View pokazuje informacje o aktualnym rowerze użytkownika oraz umożliwia ich zaktualizowanie.
+5. Bike View pokazuje informacje o aktualnym rowerze użytkownika oraz umożliwia ich zmianę.
 
 ![bike](https://user-images.githubusercontent.com/72392522/120906184-a0f81780-c657-11eb-9bc9-61ca57da7bee.jpg)
 
