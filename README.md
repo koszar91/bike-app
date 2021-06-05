@@ -64,6 +64,43 @@ Po kliknięciu w trasę przejechaną przez innego użykownika możliwe jest doda
 ![bike](https://user-images.githubusercontent.com/72392522/120906184-a0f81780-c657-11eb-9bc9-61ca57da7bee.jpg)
 
 
+## Struktura kodu
+
+Struktura kodu oparta jest na architekturze Model-View-Controller.
+Widoki wyświetlane w oknie aplikacji są zdefiniowane w plikach fxml.
+Do każdego widoku podporządkowana jest klasa będąca kontrolerem, odpowiedzialna za wypelnianie widoku danymi.
+Pośredniczy też ona przy interakcji użytkownika z danymi.
+Klasy kontrolerów pobierają dane z Bazy Danych pośrednio. Jest za to odpowiedzialna klasa DBService,
+zawierająca statyczne metody umożliwiające kontakt z bazą danych, takie jak dodawanie i wyciąganie obiektów z bazy.
+Funkcje te realizowane są dzięki bibliotece Hibernate, oferującej wygodne API o dużych mozliwościach.
+
+## Sczegóły pracy biblioteki Hibernate na przykładach z kodu
+
+Zapytania do bazy danych w naszym projekcie nie są tworzone bezpośrenio, a przy użyciu dialektu HQL (Hibernate Query Language).
+Przypomina on język zapytań SQL, w którym encjami nie są tabele, a klasy modelu, stworzone po stronie Javy.
+Zapytania przy użyciu HQL są wykonywane po otwarciu "sesji" i przed jej zamknięciem.
+Sesja odpowiada za persystencję danych, dzięki czemu Hibernate przy przykładowym zapytaniu typu select wywołuje je, a wyciągnięte dane
+są instancjonowane w obiekty Javy, należące do klas modelu.
+
+Przykładowa metoda klasy DBService: getRidesOnRoute(Route route)
+
+![getRides](https://user-images.githubusercontent.com/72392522/120906589-0ef20e00-c65b-11eb-9773-898cc15e2289.jpg)
+
+Powyższy kod odpowiedzialny jest za pozyskanie z bazy danych wszystich przejazdów na podanej trasie.
+Zapytanie do bazy danych napisane jest w języku HQL. Dzięki Hibernate'owej sesji dane są instancjonowane na obiekty Javy i agregowane w liście.
+
+Inny przykład stanowi metoda getFriendsOfUser(User user):
+
+![getFriends](https://user-images.githubusercontent.com/72392522/120906658-92abfa80-c65b-11eb-988e-b48399ec158a.jpg)
+
+Jest ona odpowiedzialna za pozyskanie listy użytkowników będących znajomymi dla danego użytkownika.
+Od strony modelu danych, w taką operacją zaangażowane są dwie tabele: tabela użytkoniwków (APPUSER)
+oraz tabela ISFRIENDTO zawierająca informację o relacji znajomości (Many to many).
+Wykonanie takiej operacji w języku SQL wymagałoby połączenia tabel dwoma joinami, natomiast przy użyciu HQL'a nie jest to konieczne.
+Opracje joinowania są wykonywane przez Hibernate'a, który po pobraniu danych o użytkowniku (który w modelu Javovym posiada listę znajomych) wypełnia instancję obiektu na podstawie wszystkich zależnosći, zatem wypełnia również jego listę znajomych,
+instancjonując ich jako obiekty zawarte w liście. Jest to znaczne ułatwienie, gwarantujące nie tylko wygodę ale również odpowiedni poziom abstrakcji, zwalniając programistę z konieczności hardcode'owania zapytań.
+Uzyskanie listy znajomych na podstawie jednego obiektu wyciągniętego z bazy danych musi odbyć się 'wewnątrz sesji'.
+
 ## TODO:
 1. opis struktury kodu
 2. zrzut bazy
