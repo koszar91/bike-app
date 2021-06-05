@@ -21,11 +21,14 @@ Stworzenie prostej aplikacji okienkowej służącej do zapisywania, udostępnian
 
 ## Szczegóły projektu - główne feature’y aplikacji
 Autentykacja użytkowników
-Udostępnienie swojego treningu kolarskiego
-Przeglądanie treningów znajomych
+
+Udostępnienie swoich przejazdów kolarskich
+
+Dodawanie znajomych oraz przeglądanie ich przejazdów
+
 Porównywanie się na trasach
 
-## Model danych!
+## Model danych
 
 [schema](https://user-images.githubusercontent.com/72392522/119807540-83061680-bee3-11eb-9709-ad7029ef2bdd.jpg)
 
